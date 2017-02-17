@@ -1,0 +1,265 @@
+<Ui xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
+<Script file="LeeroyHillCatsPower.lua"/>
+<Script file="Localization.lua"/>
+
+<Button name="LHCFButtonTemplate" inherits="UIPanelButtonTemplate" virtual="true">
+	<Size>
+		<AbsDimension x="80" y="22" />
+	</Size>
+	<Scripts>
+		<OnClick>
+			LHCFButtonHandler(self, button, down)
+		</OnClick>
+		<OnMouseUp>
+			if button == "LeftButton" then LHCF_SetButtonVisibility(self:GetText(), self:GetID()) end
+		</OnMouseUp>
+		<OnEnter function="BH_Button_OnEnter"/>
+		<OnLeave function="BH_Button_OnLeave"/>
+	</Scripts>
+</Button>
+
+<Button name="LHCFTabButtonTemplate" inherits="CharacterFrameTabButtonTemplate" virtual="true">
+	<Scripts>
+		<OnClick>
+			LHCFTabButtonHandler(self:GetID());
+		</OnClick>
+	</Scripts>
+</Button>
+
+<Frame name="LHCFTabPageTemplate" virtual="true">
+	<Anchors>
+		<Anchor point="TOPLEFT" />
+		<Anchor point="BOTTOMRIGHT" />
+	</Anchors>
+</Frame>
+
+<Frame name="LHCF_SettingsFrameTemplate" parent="UIParent" frameStrata="DIALOG" hidden="true" movable="true" enableMouse="true" clampedToScreen="true" toplevel="true" virtual="true">
+	<Size>
+		<AbsDimension x="420" y="375" />
+	</Size>
+	<Anchors>
+		<Anchor point="CENTER" />
+	</Anchors>
+	<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+		<BackgroundInsets>
+			<AbsInset left="11" right="12" top="12" bottom="11"/>
+		</BackgroundInsets>
+		<TileSize>
+			<AbsValue val="32"/>
+		</TileSize>
+		<EdgeSize>
+			<AbsValue val="32"/>
+		</EdgeSize>
+	</Backdrop>
+	<Layers> 
+		<Layer level="ARTWORK">
+			<Texture name="$parentTitle" file="Interface\DialogFrame\UI-DialogBox-Header">
+				<Size>
+					<AbsDimension x="275" y="64"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOP">
+						<Offset><AbsDimension x="0" y="12"/></Offset>
+					</Anchor>
+				</Anchors>
+			</Texture>
+			<FontString name="$parent_TitleText" inherits="GameFontNormal">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentTitle">
+						<Offset><AbsDimension x="0" y="-14"/></Offset>
+					</Anchor>
+				</Anchors>
+			</FontString>
+			<FontString name="$parent_Text" inherits="GameFontNormal">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+					<Offset><AbsDimension x="10" y="-15"/></Offset>
+					</Anchor>
+				</Anchors>
+				<Shadow>
+					<Offset x="1" y="1" />
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+			</FontString>
+		</Layer>
+	</Layers>
+	<Scripts>
+		<OnLoad>
+			self:RegisterForDrag("LeftButton")
+			self:SetUserPlaced(1)
+		</OnLoad>
+		<OnDragStart>
+			self:StartMoving()
+		</OnDragStart>
+		<OnDragStop>
+			self:StopMovingOrSizing()
+		</OnDragStop>
+	</Scripts>
+</Frame>
+
+<Frame name="BH_Core" toplevel="true" frameStrata="DIALOG" movable="true" enableMouse="true" hidden="true" parent="UIParent">
+	<Size>
+		<AbsDimension x="450" y="375" />
+	</Size>
+	<Anchors>
+		<Anchor point="CENTER" />
+	</Anchors>
+	<Layers> 
+		<Layer level="BACKGROUND"> 
+			<Texture name="$parent_Background" setAllPoints="true">
+			</Texture>
+		</Layer>
+		<Layer level="FONT">
+			<FontString name="LHCF_TitleText" inherits="GameFontHighlight" text="Az OOW klan imba hangeffekt addonja">
+				<Anchors>
+					<Anchor point="TOPLEFT">
+					<Offset><AbsDimension x="10" y="-8"/></Offset>
+					</Anchor>
+				</Anchors>
+				<FontHeight val="22"/>
+				<Shadow>
+					<Offset x="1" y="1" />
+					<Color r="0" g="0" b="0"/>
+				</Shadow>
+				<Size>
+					<AbsDimension x="260" y="22"/>
+				</Size>
+			</FontString>
+		</Layer>
+	</Layers>
+	<Frames>
+		<Button name="$parentButtonClose" inherits="UIPanelCloseButton" text="X">
+			<Size>
+				<AbsDimension x="30" y="30" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPRIGHT">
+				<Offset><AbsDimension x="-5" y="-5"/></Offset>
+				</Anchor>
+			</Anchors>
+			<Scripts>
+				<OnClick> BH_Core:Hide(); </OnClick>
+			</Scripts>
+		</Button>
+		<Frame name="LHCFTabPage_fav" inherits="LHCFTabPageTemplate" hidden="false"></Frame>
+		<Frame name="LHCFTabPage_oow" inherits="LHCFTabPageTemplate" hidden="false"></Frame>
+		<Frame name="LHCFTabPage_wow" inherits="LHCFTabPageTemplate" hidden="false"></Frame>
+		<Frame name="LHCFTabPage_games" inherits="LHCFTabPageTemplate" hidden="false"></Frame>
+		<Frame name="LHCFTabPage_tv" inherits="LHCFTabPageTemplate" hidden="false"></Frame>
+		<Frame name="LHCFTabPage_music" inherits="LHCFTabPageTemplate" hidden="false"></Frame>
+		<Frame name="LHCFTabPage_misc" inherits="LHCFTabPageTemplate" hidden="false"></Frame>
+		<Frame name="LHCF_DropDown1" inherits="UIDropDownMenuTemplate" frameStrata="FULLSCREEN_DIALOG"></Frame>
+		<Frame name="LHCF_SetLanguage" parent="UIParent" inherits = "LHCF_SettingsFrameTemplate" frameStrata="DIALOG" hidden="true" movable="true" enableMouse="true" clampedToScreen="true" toplevel="true">
+			<Frames>
+				<Button name="$parent_Button1" inherits="UIPanelButtonTemplate" text="OK">
+					<Size>
+						<AbsDimension x="100" y="24" />
+					</Size>
+					<Anchors>
+						<Anchor point="BOTTOM">
+						<Offset><AbsDimension x="0" y="15"/></Offset>
+						</Anchor>
+					</Anchors>
+					<Scripts>
+						<OnClick> self:GetParent():Hide(); </OnClick>
+					</Scripts>
+				</Button>
+			</Frames>
+		</Frame>
+		<Frame name="LHCF_HelpFrame" parent="UIParent" inherits = "LHCF_SettingsFrameTemplate" frameStrata="DIALOG" hidden="true" movable="true" enableMouse="true" clampedToScreen="true" toplevel="true"></Frame>
+		<Button name="$parentTab1" inherits="LHCFTabButtonTemplate" id="1" text="fav">
+			<Anchors>
+				<Anchor point="CENTER" relativePoint="BOTTOMLEFT">
+					<Offset>
+						<AbsDimension x="45" y="-12"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentTab2" inherits="LHCFTabButtonTemplate" id="2" text="oow">
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="$parentTab1" relativePoint="RIGHT">
+					<Offset>
+						<AbsDimension x="-16" y="0"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentTab3" inherits="LHCFTabButtonTemplate" id="3" text="wow">
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="$parentTab2" relativePoint="RIGHT">
+					<Offset>
+						<AbsDimension x="-16" y="0"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentTab4" inherits="LHCFTabButtonTemplate" id="4" text="games">
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="$parentTab3" relativePoint="RIGHT">
+					<Offset>
+						<AbsDimension x="-16" y="0"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentTab5" inherits="LHCFTabButtonTemplate" id="5" text="tv">
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="$parentTab4" relativePoint="RIGHT">
+					<Offset>
+						<AbsDimension x="-16" y="0"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentTab6" inherits="LHCFTabButtonTemplate" id="6" text="music">
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="$parentTab5" relativePoint="RIGHT">
+					<Offset>
+						<AbsDimension x="-16" y="0"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		<Button name="$parentTab7" inherits="LHCFTabButtonTemplate" id="7" text="misc">
+			<Anchors>
+				<Anchor point="LEFT" relativeTo="$parentTab6" relativePoint="RIGHT">
+					<Offset>
+						<AbsDimension x="-16" y="0"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</Button>
+		</Frames>
+	<Scripts>
+		<OnDragStart>
+			self:StartMoving()
+			self.isMoving = true
+		</OnDragStart>
+		<OnDragStop>
+			self:StopMovingOrSizing()
+			self.isMoving = false
+		</OnDragStop>
+		<OnHide>
+			PlaySound("UChatScrollButton");
+			if ( self.isMoving ) then
+			self:StopMovingOrSizing();
+			self.isMoving = false;
+			end
+		</OnHide>
+		<OnLoad>
+			self:RegisterForDrag("LeftButton")
+			self.elapsed = 0;
+			PanelTemplates_SetNumTabs(self, 7);
+			PanelTemplates_SetTab(self, 1);
+			BH_OnLoad(self);
+		</OnLoad>
+		<OnShow>
+			PlaySound("UChatScrollButton");
+			if LHCF_VanFav() == false then PanelTemplates_DisableTab(BH_Core, 1) end
+			if BH_CoreTab1.isDisabled then LHCFTabButtonHandler(2) else LHCFTabButtonHandler(1) end
+		</OnShow>
+		<OnEvent function="BH_OnEvent"/>
+	</Scripts>
+</Frame>
+</Ui>
