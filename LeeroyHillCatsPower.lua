@@ -8,16 +8,21 @@
 ------- Initialize
 
 LHCFTabs = {"fav", "oow", "wow", "games", "tv", "music", "misc"}
+LHCFSpecialEffects = {"shepard","wilhelm","neverdie"}
 
 LHCFDefaultSettings = {
 	["LHCFLanguage"] = "not set",
+	["LHCFColor"] = "blue",
+	["LHCFColors"] = {"black", "blue", "pink", "red", "green", "yellow", "white"},
 	["LHCFLanguages"] = {
 		[1] = {"Magyar","huHU"},
 		[2] = {"English","enUS"}
 		},
-	["shepard"] = true,
-	["wilhelm"] = true,
-	["neverdie"] = true,
+	["LHCFSpecialEffects"] = {
+		["shepard"] = {"Shepard", true},
+		["wilhelm"] = {"Wilhelm", true},
+		["neverdie"] = {"Mercy", true}
+		},
 	["utaljuk"] = {},
 	["imadjuk"] = {}
 }
@@ -104,6 +109,169 @@ tinsert(UISpecialFrames,"BH_Core");
 items = {}
 end
 
+function LHCF_SettingsFrameTexts()
+	LHCF_SettingsFrame_TitleText:SetText(LHCFLocalization["LHCF_SETTINGS_TITLE"])
+	SettingsLang:SetText(LHCFLocalization["LHCF_SETTINGS_LANG"])
+	SettingsColor:SetText(LHCFLocalization["LHCF_SETTINGS_COLOR"])
+	SettingsSpecEffects:SetText(LHCFLocalization["LHCF_SETTINGS_SPEC"])
+end
+
+function LHCF_SettingsBuilder()
+	---------------------------
+	--Language setting dropdown
+	---------------------------
+	LHCF_SettingsFrame:CreateFontString("SettingsLang", "OVERLAY", "LHCF_Font")
+	SettingsLang:SetPoint("TOPLEFT", 30, -30)
+	
+	if not LHCF_DropDown2 then
+		CreateFrame("Frame", "LHCF_DropDown2", LHCF_SettingsFrame,"UIDropDownMenuTemplate")
+	end
+
+	LHCF_DropDown2:ClearAllPoints()
+	LHCF_DropDown2:SetPoint("TOPLEFT", SettingsLang, "BOTTOMLEFT", 0, -10)
+	LHCF_DropDown2:Show()
+
+	local function OnClick(self)
+		UIDropDownMenu_SetSelectedID(LHCF_DropDown2, self:GetID())
+		key = "LHCFLanguage"
+		rawset(LHCFSettingsDB, key, LHCFSettingsDB["LHCFLanguages"][UIDropDownMenu_GetSelectedID(LHCF_DropDown2)][2])
+		LHCF_GetLocalizationTable(LHCFSettingsDB["LHCFLanguages"][UIDropDownMenu_GetSelectedID(LHCF_DropDown2)][2])
+		LHCF_SettingsFrameTexts()
+		_G["LHCF_DropDown3Text"]:SetText(LHCFLocalization[LHCFSettingsDB.LHCFColor])
+	end
+
+	local function initialize(self, level)
+		local info = UIDropDownMenu_CreateInfo()
+		for k, v in pairs(LHCFSettingsDB["LHCFLanguages"]) do
+			info = UIDropDownMenu_CreateInfo()
+			info.text = v[1]
+			info.value = v[2]
+			info.func = OnClick
+			UIDropDownMenu_AddButton(info, level)
+		end
+	end
+
+	UIDropDownMenu_Initialize(LHCF_DropDown2, initialize)
+	UIDropDownMenu_SetWidth(LHCF_DropDown2, 100);
+	UIDropDownMenu_SetButtonWidth(LHCF_DropDown2, 124)
+	if rawget(LHCFSettingsDB, "LHCFLanguage") == nil then
+		_G["LHCF_DropDown2Text"]:SetText(LHCFSettingsDB.LHCFLanguage)
+		else UIDropDownMenu_SetSelectedValue(LHCF_DropDown2, LHCFSettingsDB.LHCFLanguage)
+	end
+	UIDropDownMenu_JustifyText(LHCF_DropDown2, "LEFT")
+
+	------------------------
+	--Color setting dropdown
+	------------------------
+	LHCF_SettingsFrame:CreateFontString("SettingsColor", "OVERLAY", "LHCF_Font")
+	SettingsColor:SetPoint("TOPLEFT", LHCF_DropDown2, "BOTTOMLEFT", 0, -10)
+
+	if not LHCF_DropDown3 then
+		CreateFrame("Frame", "LHCF_DropDown3", LHCF_SettingsFrame,"UIDropDownMenuTemplate")
+	end
+
+	LHCF_DropDown3:ClearAllPoints()
+	LHCF_DropDown3:SetPoint("TOPLEFT", SettingsColor, "BOTTOMLEFT", 0, -10)
+	LHCF_DropDown3:Show()
+
+	local function OnClick(self)
+		UIDropDownMenu_SetSelectedID(LHCF_DropDown3, self:GetID())
+		key = "LHCFColor"
+		rawset(LHCFSettingsDB, key, LHCFSettingsDB["LHCFColors"][UIDropDownMenu_GetSelectedID(LHCF_DropDown3)])
+		DispatchCommand(LHCFSettingsDB["LHCFColors"][UIDropDownMenu_GetSelectedID(LHCF_DropDown3)], lhcfCommandTable)
+		if (BH_Core:IsVisible()) then BH_Core:Hide(); end
+	end
+
+	local function initialize(self, level)
+		local info = UIDropDownMenu_CreateInfo()
+		for k, v in ipairs(LHCFSettingsDB["LHCFColors"]) do
+			info = UIDropDownMenu_CreateInfo()
+			info.text = LHCFLocalization[v]
+			info.value = v
+			info.func = OnClick
+			UIDropDownMenu_AddButton(info, level)
+		end
+	end
+
+	UIDropDownMenu_Initialize(LHCF_DropDown3, initialize)
+	UIDropDownMenu_SetWidth(LHCF_DropDown3, 100);
+	UIDropDownMenu_SetButtonWidth(LHCF_DropDown3, 124)
+	UIDropDownMenu_SetSelectedValue(LHCF_DropDown3, LHCFSettingsDB.LHCFColor)
+	UIDropDownMenu_JustifyText(LHCF_DropDown3, "LEFT")
+	
+	-----------------------------
+	--Special effect checkbuttons
+	-----------------------------
+	LHCF_SettingsFrame:CreateFontString("SettingsSpecEffects", "OVERLAY", "LHCF_Font")
+	SettingsSpecEffects:SetPoint("TOPLEFT", LHCF_DropDown3, "BOTTOMLEFT", 0, -10)
+	local function LHCF_OnEnter(self)
+		melyikcheck = self:GetText()
+		LHCF_Tooltip:ClearLines()
+		LHCF_Tooltip:SetOwner(self, "ANCHOR_TOPRIGHT")
+		LHCF_Tooltip:AddLine(LHCFLocalization[melyikcheck], nil, nil, nil, true)
+		LHCF_TooltipTextLeft1:SetFont("Interface\\AddOns\\LeeroyHillCatsPower\\AbhayaLibre-Regular.ttf",15)
+		LHCF_Tooltip:Show()
+	end
+	local function LHCF_OnLeave(self)
+		LHCF_Tooltip:Hide()
+	end
+	local function LHCF_OnClick(self)
+		if rawget(LHCFSettingsDB, "LHCFSpecialEffects") == nil then
+			rawset(LHCFSettingsDB, "LHCFSpecialEffects", {})
+		end
+		if rawget(LHCFSettingsDB.LHCFSpecialEffects, self:GetText()) == nil then
+			rawset(LHCFSettingsDB.LHCFSpecialEffects, self:GetText(), {})
+		end
+		rawset(LHCFSettingsDB.LHCFSpecialEffects[self:GetText()], 1, LHCFSettingsDB.LHCFSpecialEffects[self:GetText()][1])
+		rawset(LHCFSettingsDB.LHCFSpecialEffects[self:GetText()], 2, not not self:GetChecked())
+--		print(self:GetText() .. " is now " .. tostring(LHCFSettingsDB.LHCFSpecialEffects[self:GetText()][2]))
+	end
+	local function LHCF_CreateCheckButton(mit)
+		local frame = CreateFrame("CheckButton", "$parentCheck" .. mit, LHCF_SettingsFrame, "UICheckButtonTemplate")
+		frame:ClearAllPoints()
+		frame:SetText(mit)
+		_G[frame:GetName() .. "Text"]:SetText(LHCFSettingsDB.LHCFSpecialEffects[mit][1])
+		frame:SetScript("OnEnter",LHCF_OnEnter)
+		frame:SetScript("OnLeave",LHCF_OnLeave)
+		frame:SetScript("OnClick",LHCF_OnClick)
+		frame:SetChecked(LHCFSettingsDB.LHCFSpecialEffects[mit][2])
+	end
+	for i, v in ipairs(LHCFSpecialEffects) do
+		LHCF_CreateCheckButton(v)
+	end
+	LHCF_SettingsFrameCheckshepard:SetPoint("TOPLEFT", SettingsSpecEffects, "BOTTOMLEFT", 0, -10)
+	LHCF_SettingsFrameCheckwilhelm:SetPoint("TOPLEFT", LHCF_SettingsFrameCheckshepard, "TOPRIGHT", 70, 0)
+	LHCF_SettingsFrameCheckneverdie:SetPoint("TOPLEFT", LHCF_SettingsFrameCheckwilhelm, "TOPRIGHT", 70, 0)
+
+--[[
+	local frame = CreateFrame("CheckButton", "$parentCheckButton1", LHCF_SettingsFrame, "UICheckButtonTemplate")
+	frame:ClearAllPoints()
+
+	frame:SetText("Shepard")
+	_G[frame:GetName() .. "Text"]:SetText("Shepard")
+	frame:SetScript("OnEnter",LHCF_OnEnter)
+	frame:SetScript("OnLeave",LHCF_OnLeave)
+	local frame = CreateFrame("CheckButton", "$parentCheckButton2", LHCF_SettingsFrame, "UICheckButtonTemplate")
+	frame:ClearAllPoints()
+	
+	frame:SetText("Wilhelm")
+	_G[frame:GetName() .. "Text"]:SetText("Wilhelm")
+	frame:SetScript("OnEnter",LHCF_OnEnter)
+	frame:SetScript("OnLeave",LHCF_OnLeave)
+	local frame = CreateFrame("CheckButton", "$parentCheckButton3", LHCF_SettingsFrame, "UICheckButtonTemplate")
+	frame:ClearAllPoints()
+	
+	frame:SetText("Mercy")
+	_G[frame:GetName() .. "Text"]:SetText("Mercy")
+	frame:SetScript("OnEnter",LHCF_OnEnter)
+	frame:SetScript("OnLeave",LHCF_OnLeave)
+]]
+end
+
+function LHCF_SetOptions()
+	LHCF_SettingsFrameTexts()
+end
+
 function LHCF_CreateButtons()
 	for i = 1, 60 do
 		local item = CreateFrame("Button", "BH_Core_Button" .. i, BH_Core, "LHCFButtonTemplate")
@@ -133,12 +301,6 @@ function LHCFButtonHandler(...)
 		LHCF_SetButtonVisibility(DropDownToggledBy, self:GetID())
 	end
 end
-
--- CSEKKOLJUK AHOL kids[] kódot használunk, mert a gombok már nem a tabok gyerekei!!! Hanem a BH_Core-é... lehet a kids-ek helyett inkább direktben a gombokon kell végigmenni.
--- Át kell alakítani az addont úgy, hogy le legyen generálva 12 x 5 gomb és akkor csak a settext propertyket állítgatjuk megjelenítésnél (végigmegyünk mindig a childokon a kids megoldással)
--- A tab megjelenítéseknél először elrejtjük az összes gombot (végigmegyünk a childokon), aztán végigmegyünk a Masteren és egy segédtáblába beolvassuk az aktuális tab kategóriájának megfelelő effekteket.
--- Majd végigmegyünk a segédtábla összes elemén (ipairs k, v) és a kids tábla [k] elemének állítjuk a settextjét és megjelenítjük (Show())
--- segédtáblába érdemes lenne egyből az LHCFIndexet berakni értéknek, hogy egyből hívhassuk a Mastert
 
 function LHCF_SetButtonVisibility(melyiket, hanyadik)
 			if LHCFSettingsDB.utaljuk[melyiket] == true then
@@ -255,14 +417,15 @@ end
 
 function BH_Button_OnEnter(self, motion)
 melyikeffekt = self:GetText()
-GameTooltip:SetOwner(self, "ANCHOR_TOPRIGHT")
+LHCF_Tooltip:SetOwner(self, "ANCHOR_TOPRIGHT")
 effektindex = LHCFIndex[melyikeffekt]
-GameTooltip:SetText(LHCFMaster[effektindex][1])
-GameTooltip:Show()
+LHCF_Tooltip:SetText(LHCFMaster[effektindex][1])
+LHCF_TooltipTextLeft1:SetFont("Interface\\AddOns\\LeeroyHillCatsPower\\AbhayaLibre-Regular.ttf",15)
+LHCF_Tooltip:Show()
 end
 
 function BH_Button_OnLeave(self, motion)
-GameTooltip:Hide()
+LHCF_Tooltip:Hide()
 end
 
 function DispatchCommand(message, commandTable)
@@ -361,19 +524,19 @@ DEFAULT_CHAT_FRAME:AddMessage("Power of LeeroyHillCats enabled! (/lhcf help - to
 ------- Event handling
 
 function LHCF_FirstRun()
-	if not LHCF_DropDown2 then
-		CreateFrame("Frame", "LHCF_DropDown2", LHCF_SetLanguage,"UIDropDownMenuTemplate")
+	if not LHCF_DropDown4 then
+		CreateFrame("Frame", "LHCF_DropDown4", LHCF_SetLanguage,"UIDropDownMenuTemplate")
 	end
 
-	LHCF_DropDown2:ClearAllPoints()
-	LHCF_DropDown2:SetPoint("CENTER", 0, -10)
-	LHCF_DropDown2:Show()
+	LHCF_DropDown4:ClearAllPoints()
+	LHCF_DropDown4:SetPoint("CENTER", 0, -40)
+	LHCF_DropDown4:Show()
 
 	local function OnClick(self)
-		UIDropDownMenu_SetSelectedID(LHCF_DropDown2, self:GetID())
+		UIDropDownMenu_SetSelectedID(LHCF_DropDown4, self:GetID())
 		key = "LHCFLanguage"
-		rawset(LHCFSettingsDB, key, LHCFSettingsDB["LHCFLanguages"][UIDropDownMenu_GetSelectedID(LHCF_DropDown2)][2])
-		LHCF_GetLocalizationTable(LHCFSettingsDB["LHCFLanguages"][UIDropDownMenu_GetSelectedID(LHCF_DropDown2)][2])
+		rawset(LHCFSettingsDB, key, LHCFSettingsDB["LHCFLanguages"][UIDropDownMenu_GetSelectedID(LHCF_DropDown4)][2])
+		LHCF_GetLocalizationTable(LHCFSettingsDB["LHCFLanguages"][UIDropDownMenu_GetSelectedID(LHCF_DropDown4)][2])
 	end
 
 	local function initialize(self, level)
@@ -387,10 +550,11 @@ function LHCF_FirstRun()
 		end
 	end
 
-UIDropDownMenu_Initialize(LHCF_DropDown2, initialize)
-UIDropDownMenu_SetWidth(LHCF_DropDown2, 100);
-UIDropDownMenu_SetButtonWidth(LHCF_DropDown2, 124)
-UIDropDownMenu_JustifyText(LHCF_DropDown2, "LEFT")
+UIDropDownMenu_Initialize(LHCF_DropDown4, initialize)
+UIDropDownMenu_SetWidth(LHCF_DropDown4, 100);
+UIDropDownMenu_SetButtonWidth(LHCF_DropDown4, 124)
+UIDropDownMenu_JustifyText(LHCF_DropDown4, "LEFT")
+_G["LHCF_DropDown4Text"]:SetText(LHCFSettingsDB.LHCFLanguage)
 end
 
 function BH_OnEvent(self, event, ...)
@@ -398,40 +562,40 @@ function BH_OnEvent(self, event, ...)
 	if (event == "ADDON_LOADED") then
 		addon = select(1, ...)
 		if addon == "LeeroyHillCatsPower" then
+			CreateFrame("GameTooltip", "LHCF_Tooltip", UIParent, "GameTooltipTemplate")
+			if not LHCF_GetLocalizationTable(LHCFSettingsDB["LHCFLanguage"]) then LHCF_GetLocalizationTable("enUS") end
 			print("Loaded " .. addon)
 			LHCF_AddOptionMT(LHCFSettingsDB, LHCFDefaultSettings)
 			if LHCFSettingsDB["LHCFLanguage"] == "not set" then
 				LHCF_GetLocalizationTable("enUS")
 				LHCF_FirstRun()
-				local Path, Size, Flags = LHCF_SetLanguage_TitleText:GetFont()
 				LHCF_SetLanguage_TitleText:SetText(LHCFLocalization["LHCF_SETLANGUAGE_TITLE"])
-				LHCF_SetLanguage_TitleText:SetFont("Interface\\AddOns\\LeeroyHillCatsPower\\AbhayaLibre-Regular.ttf",13,Flags)
 				LHCF_SetLanguage:Show()
+			else LHCF_SettingsBuilder()
 			end
-		if not LHCF_GetLocalizationTable(LHCFSettingsDB["LHCFLanguage"]) then LHCF_GetLocalizationTable("enUS") end
-		UIDropDownMenu_Initialize(LHCF_DropDown1, LHCF_InitializeDropDown)
-		LHCF_CreateButtons()
+			UIDropDownMenu_Initialize(LHCF_DropDown1, LHCF_InitializeDropDown)
+			LHCF_CreateButtons()
 		end
 	end
 
 	if (event == "MERCHANT_SHOW") then
 		isshepardhere = random(1, 100);
 		if (isshepardhere <= 10) then
-		   PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\shepard.mp3", "master");
+			if LHCFSettingsDB.LHCFSpecialEffects.shepard[2] then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\shepard.mp3", "master"); end
 		end
 	end
 
 	if (event == "PLAYER_DEAD") then
 		iswilhelm = random(1, 100);
 		if (iswilhelm <= 10) then
-		   PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\wilhelm.mp3", "master");
+		   if LHCFSettingsDB.LHCFSpecialEffects.wilhelm[2] then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\wilhelm.mp3", "master"); end
 		end
 	end
 
 	if (event == "RESURRECT_REQUEST") then
 		doheroesdie = random(1, 100);
 		if (doheroesdie <= 50) then
-		   SendChatMessage("never dies!", "EMOTE");
+			SendChatMessage("never dies!", "EMOTE");
 		end
 	end
 	
@@ -450,7 +614,13 @@ function BH_OnEvent(self, event, ...)
 			
 			if megvan then
 				if (time() >= BH_TimeTilNext) then
-					if LHCFSettingsDB.utaljuk[v[2]] == false or #LHCFSettingsDB.utaljuk == 0 then PlaySoundFile(v[5], "master") end
+					if LHCFSettingsDB.utaljuk[v[2]] == false or #LHCFSettingsDB.utaljuk == 0 then
+						if LHCFSettingsDB.LHCFSpecialEffects[v[2]] then
+							if LHCFSettingsDB.LHCFSpecialEffects[v[2]][2] ~= false then PlaySoundFile(v[5], "master") end
+						else PlaySoundFile(v[5], "master")
+						end
+					end
+--					if LHCFSettingsDB.utaljuk[v[2]] == false or #LHCFSettingsDB.utaljuk == 0 then PlaySoundFile(v[5], "master") end
 					if (v[3] ~= "") then
 						DoEmote(v[3])
 					end
@@ -468,10 +638,7 @@ end
 function lhhelp_command()
 	LHCF_HelpFrame_TitleText:SetText(LHCFLocalization["LHCF_HELP_TITLE"])
 	LHCF_HelpFrame_Text:SetText(LHCFLocalization["LHCF_HELP_TEXT"])
-	local Path, Size, Flags = LHCF_HelpFrame_TitleText:GetFont()
-	LHCF_HelpFrame_TitleText:SetFont("Interface\\AddOns\\LeeroyHillCatsPower\\AbhayaLibre-Regular.ttf",13,Flags)
-	Path, Size, Flags = LHCF_HelpFrame_Text:GetFont()
-	LHCF_HelpFrame_Text:SetFont("Interface\\AddOns\\LeeroyHillCatsPower\\AbhayaLibre-Regular.ttf",15,Flags)
+	LHCF_HelpFrame_Text:SetFont("Interface\\AddOns\\LeeroyHillCatsPower\\AbhayaLibre-Regular.ttf",15)
 	LHCF_HelpFrame_Text:SetJustifyH("LEFT")
 	LHCF_HelpFrame_Text:SetSize(400, 350)
 	LHCF_HelpFrame:Show()
@@ -499,13 +666,14 @@ function lhcf_command(...)
 			LHCF_TitleText:SetText(LHCFLocalization["LHCF_CORE_TITLE"])
 			BH_Core:Show();
 		else
-			BH_Core:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-									edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-									tile = true, tileSize = 16, edgeSize = 16, 
-									insets = { left = 4, right = 4, top = 4, bottom = 4 }});
-			BH_Core:SetBackdropColor(0,0,1,0.6);
-			LHCF_TitleText:SetText(LHCFLocalization["LHCF_CORE_TITLE"])
-			BH_Core:Show();
+			DispatchCommand(LHCFSettingsDB["LHCFColor"], lhcfCommandTable)
+--			BH_Core:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
+--									edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
+--									tile = true, tileSize = 16, edgeSize = 16, 
+--									insets = { left = 4, right = 4, top = 4, bottom = 4 }});
+--			BH_Core:SetBackdropColor(0,0,1,0.6);
+--			LHCF_TitleText:SetText(LHCFLocalization["LHCF_CORE_TITLE"])
+--			BH_Core:Show();
 		end
    end
 end

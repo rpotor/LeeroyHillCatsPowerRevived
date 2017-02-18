@@ -65,6 +65,15 @@ Wilhelm Scream - http://www.youtube.com/watch?v=cdbYsoEasio
 
 VERSION HISTORY
 
+v5.3 - 18 February 2017
+- The addon now has a settings window, which can be accessed by clicking on the gear icon in the top right corner of the main addon window. The addon language and the main window color can be set here and there are controls for the various special effects as well.
+- The sound effect buttons are now ordered by their text on each of the tabs.
+- The source code of the addon is now available on Github at https://github.com/rpotor/LeeroyHillCatsPowerRevived
+
+v5.2 - 17 February 2017
+- Okay, changing this version to release, in case there are any bugs in it, please use the issue report tool on Curse to report it.
+- For the new features of the addon, see below
+
 v5.2b - 16 February 2017
 - You can now choose what language the addon should use, when you first run it after this update
 - You can now right click on each of the buttons and choose whether you hate that effect or really like it (or both if you want to be really different from the crowd). If you hate it, the button will go grey and you won't hear that sound effect ever again (until you right click again and "unhate" it). If you favorite it, the button will also appear on the tab called "fav", which collects all your favorited sound effects for easy reach.

@@ -2,6 +2,18 @@
 <Script file="LeeroyHillCatsPower.lua"/>
 <Script file="Localization.lua"/>
 
+<Font name="LHCF_Font" virtual="true" inherits="GameFontNormal" font="Interface\AddOns\LeeroyHillCatsPower\AbhayaLibre-Regular.ttf">
+	<FontHeight>
+		<AbsValue val="16" />
+	</FontHeight>
+</Font>
+
+<Font name="LHCF_TitleFont" virtual="true" inherits="GameFontHighlight" font="Interface\AddOns\LeeroyHillCatsPower\AbhayaLibre-Regular.ttf">
+	<FontHeight>
+		<AbsValue val="16" />
+	</FontHeight>
+</Font>
+
 <Button name="LHCFButtonTemplate" inherits="UIPanelButtonTemplate" virtual="true">
 	<Size>
 		<AbsDimension x="80" y="22" />
@@ -63,14 +75,14 @@
 					</Anchor>
 				</Anchors>
 			</Texture>
-			<FontString name="$parent_TitleText" inherits="GameFontNormal">
+			<FontString name="$parent_TitleText" inherits="LHCF_Font">
 				<Anchors>
 					<Anchor point="TOP" relativeTo="$parentTitle">
 						<Offset><AbsDimension x="0" y="-14"/></Offset>
 					</Anchor>
 				</Anchors>
 			</FontString>
-			<FontString name="$parent_Text" inherits="GameFontNormal">
+			<FontString name="$parent_Text" inherits="LHCF_Font">
 				<Anchors>
 					<Anchor point="TOPLEFT">
 					<Offset><AbsDimension x="10" y="-15"/></Offset>
@@ -110,24 +122,47 @@
 			</Texture>
 		</Layer>
 		<Layer level="FONT">
-			<FontString name="LHCF_TitleText" inherits="GameFontHighlight" text="Az OOW klan imba hangeffekt addonja">
+			<FontString name="LHCF_TitleText" inherits="LHCF_TitleFont">
 				<Anchors>
 					<Anchor point="TOPLEFT">
 					<Offset><AbsDimension x="10" y="-8"/></Offset>
 					</Anchor>
 				</Anchors>
-				<FontHeight val="22"/>
 				<Shadow>
 					<Offset x="1" y="1" />
 					<Color r="0" g="0" b="0"/>
 				</Shadow>
-				<Size>
-					<AbsDimension x="260" y="22"/>
-				</Size>
 			</FontString>
 		</Layer>
 	</Layers>
 	<Frames>
+		<Button name="LHCFSettingsButton">
+			<Size>
+				<AbsDimension x="23" y="23" />
+			</Size>
+			<Anchors>
+				<Anchor point="TOPRIGHT">
+					<Offset><AbsDimension x="-35" y="-5"/></Offset>
+				</Anchor>
+			</Anchors>
+			<NormalTexture name="$parentNormalTexture" file="Interface\Icons\Trade_Engineering">
+				<Size>
+					<AbsDimension x="23" y="23" />
+				</Size>
+				<Anchors>
+					<Anchor point="CENTER">
+					</Anchor>
+				</Anchors>
+			</NormalTexture>
+			<PushedTexture file="Interface\Icons\Trade_Engineering"/>
+			<HighlightTexture file="Interface\Icons\Trade_Engineering" alphaMode="ADD"/>
+			<Scripts>
+				<OnClick>
+					LHCF_SettingsFrame:Show();
+					if (BH_Core:IsVisible()) then BH_Core:Hide(); end
+				</OnClick>
+			</Scripts>
+		</Button>
 		<Button name="$parentButtonClose" inherits="UIPanelCloseButton" text="X">
 			<Size>
 				<AbsDimension x="30" y="30" />
@@ -161,12 +196,38 @@
 						</Anchor>
 					</Anchors>
 					<Scripts>
-						<OnClick> self:GetParent():Hide(); </OnClick>
+						<OnClick>
+						LHCF_SettingsBuilder();
+						self:GetParent():Hide();
+						</OnClick>
 					</Scripts>
 				</Button>
 			</Frames>
 		</Frame>
 		<Frame name="LHCF_HelpFrame" parent="UIParent" inherits = "LHCF_SettingsFrameTemplate" frameStrata="DIALOG" hidden="true" movable="true" enableMouse="true" clampedToScreen="true" toplevel="true"></Frame>
+		<Frame name="LHCF_SettingsFrame" parent="UIParent" inherits = "LHCF_SettingsFrameTemplate" frameStrata="DIALOG" hidden="true" movable="true" enableMouse="true" clampedToScreen="true" toplevel="true">
+			<Frames>
+				<Button name="$parent_Button1" inherits="UIPanelButtonTemplate" text="OK">
+					<Size>
+						<AbsDimension x="100" y="24" />
+					</Size>
+					<Anchors>
+						<Anchor point="BOTTOM">
+						<Offset><AbsDimension x="0" y="15"/></Offset>
+						</Anchor>
+					</Anchors>
+					<Scripts>
+						<OnClick>
+							self:GetParent():Hide();
+							lhcf_command();
+						</OnClick>
+					</Scripts>
+				</Button>
+			</Frames>
+			<Scripts>
+				<OnShow>LHCF_SetOptions();</OnShow>
+			</Scripts>
+		</Frame>
 		<Button name="$parentTab1" inherits="LHCFTabButtonTemplate" id="1" text="fav">
 			<Anchors>
 				<Anchor point="CENTER" relativePoint="BOTTOMLEFT">

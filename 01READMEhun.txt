@@ -63,6 +63,15 @@ Indítjuk az órát, emeljük a búrát effekt - http://www.youtube.com/watch?v=7E5Z2W
 
 VERSION HISTORY
 
+v5.3 - 2017. 02. 18.
+- Az addonnak mostantól van egy beállító ablaka is, amit a fõ ablak jobb felsõ sarkában levõ fogaskerék gombra kattintva csalhatunk elõ. Az addon nyelve és a fõ ablak háttérszíne állítható be itt, illetve vannak beállító gombok az addon különféle speciális effektjeihez is.
+- A hangeffekt gombok mostantól ABC sorrendbe rendezõdnek az egyes tabokon. (Feature requested by Pio)
+- Az addon forráskódja mostantól elérhetõ a githubon: https://github.com/rpotor/LeeroyHillCatsPowerRevived
+
+v5.2 - 2017. 02. 17.
+- Béta verzióból beállítva hivatalos release-nek, ha mégis vannak bugok, akkor azt légyszi jelezzétek az addon Curse weboldalán.
+- Az addon újdonságait lásd lent a v5.2b verziónál.
+
 v5.2b - 2017. 02. 16.
 - Mostantól a jelenlegi frissítést követõ elsõ indításnál meghatározhatod, hogy milyen nyelven beszéljen az addon.
 - Mostantól minden gombon lehet jobb egérgombbal kattintani és a lenyíló menüben kiválaszthatod, hogy utálod vagy imádod az adott effektet (esetleg mindkettõ, viszont akkor bocs, de elég fura gyerek lehetsz :-) Ha utálod, akkor a gomb szürkére vált és azt a hangeffektet soha többet nem fogod hallani többé (addig amíg egy újabb jobb egérgombot nyomva nem veszed le róla az utálatot). Ha imádod az effektet, akkor a gomb megjelenik a "fav" tabon is, ahol az összes kedvenc hangeffekted könnyen elérhetõ.
