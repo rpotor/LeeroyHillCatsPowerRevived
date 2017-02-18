@@ -242,30 +242,6 @@ function LHCF_SettingsBuilder()
 	LHCF_SettingsFrameCheckshepard:SetPoint("TOPLEFT", SettingsSpecEffects, "BOTTOMLEFT", 0, -10)
 	LHCF_SettingsFrameCheckwilhelm:SetPoint("TOPLEFT", LHCF_SettingsFrameCheckshepard, "TOPRIGHT", 70, 0)
 	LHCF_SettingsFrameCheckneverdie:SetPoint("TOPLEFT", LHCF_SettingsFrameCheckwilhelm, "TOPRIGHT", 70, 0)
-
---[[
-	local frame = CreateFrame("CheckButton", "$parentCheckButton1", LHCF_SettingsFrame, "UICheckButtonTemplate")
-	frame:ClearAllPoints()
-
-	frame:SetText("Shepard")
-	_G[frame:GetName() .. "Text"]:SetText("Shepard")
-	frame:SetScript("OnEnter",LHCF_OnEnter)
-	frame:SetScript("OnLeave",LHCF_OnLeave)
-	local frame = CreateFrame("CheckButton", "$parentCheckButton2", LHCF_SettingsFrame, "UICheckButtonTemplate")
-	frame:ClearAllPoints()
-	
-	frame:SetText("Wilhelm")
-	_G[frame:GetName() .. "Text"]:SetText("Wilhelm")
-	frame:SetScript("OnEnter",LHCF_OnEnter)
-	frame:SetScript("OnLeave",LHCF_OnLeave)
-	local frame = CreateFrame("CheckButton", "$parentCheckButton3", LHCF_SettingsFrame, "UICheckButtonTemplate")
-	frame:ClearAllPoints()
-	
-	frame:SetText("Mercy")
-	_G[frame:GetName() .. "Text"]:SetText("Mercy")
-	frame:SetScript("OnEnter",LHCF_OnEnter)
-	frame:SetScript("OnLeave",LHCF_OnLeave)
-]]
 end
 
 function LHCF_SetOptions()
