@@ -104,6 +104,8 @@ self:RegisterEvent("CHAT_MSG_EMOTE");
 self:RegisterEvent("MERCHANT_SHOW");
 self:RegisterEvent("PLAYER_DEAD");
 self:RegisterEvent("RESURRECT_REQUEST");
+self:RegisterEvent("UNIT_SPELLCAST_START");
+self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START");
 tinsert(UISpecialFrames,"BH_Core");
 
 items = {}
@@ -552,6 +554,10 @@ function BH_OnEvent(self, event, ...)
 			UIDropDownMenu_Initialize(LHCF_DropDown1, LHCF_InitializeDropDown)
 			LHCF_CreateButtons()
 		end
+	end
+
+	if event == "UNIT_SPELLCAST_CHANNEL_START" then
+		if select(5, ...) == 740 then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\tranq.mp3", "master") end
 	end
 
 	if (event == "MERCHANT_SHOW") then
