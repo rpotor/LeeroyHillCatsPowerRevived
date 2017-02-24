@@ -1,4 +1,4 @@
-ï»¿1. INFORMÁCIÓ
+ï»¿1. INFORMÃCIÃ“
 Larenon / Leirren / Pio féle OoW hangeffekt addon.
 
 Ez az addon a LeeroyHillCatsPower addon módosított változata. A jelenlegi verzió alapját képezõ addon innen tölthetõ le: http://ui.worldofwar.net/ui.php?id=1210 (sajnos jó eséllyel már nem mûködik, mert pár éve nem frissítették).
