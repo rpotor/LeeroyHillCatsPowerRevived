@@ -60,8 +60,45 @@ I'm Commander Shepard and this is my favorite store on the Citadel - http://www.
 Wilhelm Scream - http://www.youtube.com/watch?v=cdbYsoEasio
 Indítjuk az órát, emeljük a búrát effekt - http://www.youtube.com/watch?v=7E5Z2W1iu7M#t=2m22s
 "HEROES NEVER DIE!", Overwatch, Mercy effekt - https://www.youtube.com/watch?v=YOWfmpCBYmo
+Batman - https://www.youtube.com/watch?v=EtoMN_xi-AM
+Arnold Chopper - https://www.youtube.com/watch?v=-9-Te-DPbSE
+Arnold Cookie - https://www.youtube.com/watch?v=dMLaKR9eoRA
+Fekete lovag döntetlen - https://www.youtube.com/watch?v=DiKFV9Ka-GU
+Suramar csodái - https://www.youtube.com/watch?v=wWb0_WW15is
+Vingardium leviosa - https://www.youtube.com/watch?v=FWtO0cfgewY
+Epic NPC Man - Nice Day for Fishin' - https://www.youtube.com/watch?v=Vyw6n1EKlww
+Piros gomb - https://www.youtube.com/watch?v=L4o7sPDhr-8
+You Spin Me Right 'Round - https://www.youtube.com/watch?v=PGNiXGX2nLU
+The Old Fashioned Way Quest - https://www.youtube.com/watch?v=E5oa4X7GB2g
+Stardust Crusaders Kono Dio Da - https://www.youtube.com/watch?v=HaGkk60kcjQ
+Stardust Crusaders Road Roller Da - https://www.youtube.com/watch?v=kIaqZh_gGz4
+Ben Brode röhögés - https://www.youtube.com/watch?v=7Dd23MlMmFY
+Falcon Punch - https://www.youtube.com/watch?v=NN-gvLxF8vg
+Helya Touchy - https://www.youtube.com/watch?v=-l6_OYGGZpo
+Dragon Ball Z effect: Over 9000 - https://www.youtube.com/watch?v=M7ZDgmYAlZ4
+Arcway General - https://www.youtube.com/watch?v=FmbNZIrYcuk
+Noooo, God King Skovald effect - https://www.youtube.com/watch?v=WmP0hj9ZjDg
+Fussatok bolondok - https://www.youtube.com/watch?v=gkjlwPmrnHc
+I am the one who knocks - https://www.youtube.com/watch?v=3HH9IiHMD2M
+Say my name - https://www.youtube.com/watch?v=lUjEdsWtUsg
+Curb Your Enthusiasm theme - https://www.youtube.com/watch?v=Ag1o3koTLWM
+Hát, ez van - Január, a Gólya effekt - http://tenyek.hu/Belfold/227887_elpusztult-januar-a-golya.html
+Yeah, Science! - https://www.youtube.com/watch?v=eQR1r1KTjaE
+Dark Souls halál - https://www.youtube.com/watch?v=CpaT28qMfis
+Zenyatta ultimate - https://www.youtube.com/watch?v=q_WYOaAKbOg
 
 VERSION HISTORY
+
+v5.4 - 2017. 02. 24.
+- Bekerültek az addonba a batman, chopper, cookie, dontetlen, illusion, leviosa, niceday, notright, nyugodjanak és rightround hangeffektek
+- Bekerült az addonba a squish hangeffekt (feature requested by Attreus)
+- Bekerültek az addonba a konodio és a roadroll hangeffektek (feature requested by Alona)
+- Bekerültek az addonba a brodelol, falcon, touchy, over9000, doomed, skovald és fussatok hangeffektek (mindegyik Hirxia kérésére)
+- Bekerültek az addonba a knock és a heisenberg hangeffektek (mindkettõ Sowy kérésére)
+- Bekerültek az addonba a curb, ezvan, lotr és science hangeffektek (mindegyik Pio kérésére)
+- Mostantól idõnként, amikor a karaktered meghal, a Wilhelm Scream helyett a Dark Souls játékban történõ elhalálozás hangeffektjével távozik az élõk sorából. (feature requested by Hirx)
+- Mostantól ha a közeledben valaki a Tranquility képességet használja, az Overwatch univerzumból áthallatszik, ahogy Zenyatta azt mondja: Experience Tranquility! (Feature requested by Hirx)
+- A régi effektek közül néhány mostantól hangosabban szólal meg (boldog, elkurtuk, idiota, ikillyou, jonarez, kenny, nicedress, olj, pokmalac, puska, rabbids, rickastley, ticktack)
 
 v5.3 - 2017. 02. 18.
 - Az addonnak mostantól van egy beállító ablaka is, amit a fõ ablak jobb felsõ sarkában levõ fogaskerék gombra kattintva csalhatunk elõ. Az addon nyelve és a fõ ablak háttérszíne állítható be itt, illetve vannak beállító gombok az addon különféle speciális effektjeihez is.

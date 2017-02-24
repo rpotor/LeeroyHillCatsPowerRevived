@@ -62,8 +62,45 @@ I'm Commander Shepard and this is my favorite store on the Citadel - http://www.
 Wilhelm Scream - http://www.youtube.com/watch?v=cdbYsoEasio
 (* HUN) Indítjuk az órát, emeljük a búrát effekt - http://www.youtube.com/watch?v=7E5Z2W1iu7M#t=2m22s
 "HEROES NEVER DIE!", Overwatch, Mercy effekt - https://www.youtube.com/watch?v=YOWfmpCBYmo
+Batman - https://www.youtube.com/watch?v=EtoMN_xi-AM
+Arnold Chopper - https://www.youtube.com/watch?v=-9-Te-DPbSE
+Arnold Cookie - https://www.youtube.com/watch?v=dMLaKR9eoRA
+(* HUN) Fekete lovag döntetlen - https://www.youtube.com/watch?v=DiKFV9Ka-GU
+The Wonders of Suramar - https://www.youtube.com/watch?v=wWb0_WW15is
+Vingardium leviosa - https://www.youtube.com/watch?v=FWtO0cfgewY
+Epic NPC Man - Nice Day for Fishin' - https://www.youtube.com/watch?v=Vyw6n1EKlww
+(* HUN) Piros gomb - https://www.youtube.com/watch?v=L4o7sPDhr-8
+You Spin Me Right 'Round - https://www.youtube.com/watch?v=PGNiXGX2nLU
+The Old Fashioned Way Quest - https://www.youtube.com/watch?v=E5oa4X7GB2g
+Stardust Crusaders Kono Dio Da - https://www.youtube.com/watch?v=HaGkk60kcjQ
+Stardust Crusaders Road Roller Da - https://www.youtube.com/watch?v=kIaqZh_gGz4
+Ben Brode laugh - https://www.youtube.com/watch?v=7Dd23MlMmFY
+Falcon Punch - https://www.youtube.com/watch?v=NN-gvLxF8vg
+Helya Touchy - https://www.youtube.com/watch?v=-l6_OYGGZpo
+Dragon Ball Z effect: Over 9000 - https://www.youtube.com/watch?v=M7ZDgmYAlZ4
+Arcway General - https://www.youtube.com/watch?v=FmbNZIrYcuk
+Noooo, God King Skovald effect - https://www.youtube.com/watch?v=WmP0hj9ZjDg
+(* HUN) Fussatok bolondok - https://www.youtube.com/watch?v=gkjlwPmrnHc
+I am the one who knocks - https://www.youtube.com/watch?v=3HH9IiHMD2M
+Say my name - https://www.youtube.com/watch?v=lUjEdsWtUsg
+Curb Your Enthusiasm theme - https://www.youtube.com/watch?v=Ag1o3koTLWM
+(* HUN) Hát, ez van - Január, a Gólya effekt - http://tenyek.hu/Belfold/227887_elpusztult-januar-a-golya.html
+Yeah, Science! - https://www.youtube.com/watch?v=eQR1r1KTjaE
+Dark Souls death - https://www.youtube.com/watch?v=CpaT28qMfis
+Zenyatta ultimate - https://www.youtube.com/watch?v=q_WYOaAKbOg
 
 VERSION HISTORY
+
+v5.4 - 24 February 2017
+- The addon now includes the batman, chopper, cookie, dontetlen, illusion, leviosa, niceday, notright, nyugodjanak and rightround sound effects
+- The addon now includes the squish sound effect (feature requested by Attreus)
+- The addon now includes the konodio and roadroll sound effects (feature requested by Alona)
+- The addon now includes the brodelol, falcon, touchy, over9000, doomed, skovald and fussatok sound effects (all of them requested by Hirxia)
+- The addon now includes the knock and heisenberg sound effects (both of them requested by Sowy)
+- The addon now includes the curb, ezvan, lotr and science sound effects (all of them requested by Pio)
+- Sometimes when you die, instead of the Wilhelm Scream, you leave the realm of the living with the dying sound effect of the Dark Souls game (feature requested by Hirx)
+- Whenever someone near you casts Tranquility, Zenyatta from the Overwatch universe can be heard saying: Experience Tranquility! (Feature requested by Hirx)
+- Some of the old sound effects are a little bit louder now (boldog, elkurtuk, idiota, ikillyou, jonarez, kenny, nicedress, olj, pokmalac, puska, rabbids, rickastley, ticktack)
 
 v5.3 - 18 February 2017
 - The addon now has a settings window, which can be accessed by clicking on the gear icon in the top right corner of the main addon window. The addon language and the main window color can be set here and there are controls for the various special effects as well.
@@ -117,7 +154,7 @@ v4.3 - 29 October 2011
 
 v4.2  - 01 July 2011
 - The addon has received new background colors (your addon can be black, blue or pink :-) )
-- The addon now has the /badget, /boldog, /fckbliz, /hatszel, /idiota, /ikillyou, /jonarez, /kenny, /keycat, /korhaz, /lehugyoza, /murloc, /nicedress, /olj, /pokmalac, /prepared, /rabbids, /rickastley, /rouges, /swedishmeal, /szokecigany, /tick-tack, / trollololol sound effects
+- The addon now has the /badget, /boldog, /fckbliz, /hatszel, /idiota, /ikillyou, /jonarez, /kenny, /keycat, /korhaz, /lehugyoza, /murloc, /nicedress, /olj, /pokmalac, /prepared, /rabbids, /rickastley, /rouges, /swedishmeal, /szokecigany, /tick-tack, /trollololol sound effects
 
 v3.22 - 10 December 2010
 - Some effects now have Youtube links in the readme, in case someone doesn't know them. It should be noted however that these videos are part of the general knowledge of mankind, so if someone has not yet seen them, they should immediately correct this fault :-)

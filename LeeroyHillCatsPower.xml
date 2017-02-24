@@ -14,6 +14,26 @@
 	</FontHeight>
 </Font>
 
+<Button name="LHCFNextButtonTemplate" virtual="true">
+	<Size>
+		<AbsDimension x="32" y="32"/>
+	</Size>
+	<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Up"/>
+	<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Down"/>
+	<DisabledTexture file="Interface\Buttons\UI-SpellbookIcon-NextPage-Disabled"/>
+	<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
+</Button>
+
+<Button name="LHCFPrevButtonTemplate" virtual="true">
+	<Size>
+		<AbsDimension x="32" y="32"/>
+	</Size>
+	<NormalTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Up"/>
+	<PushedTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Down"/>
+	<DisabledTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Disabled"/>
+	<HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
+</Button>
+
 <Button name="LHCFButtonTemplate" inherits="UIPanelButtonTemplate" virtual="true">
 	<Size>
 		<AbsDimension x="80" y="22" />
@@ -47,7 +67,7 @@
 
 <Frame name="LHCF_SettingsFrameTemplate" parent="UIParent" frameStrata="DIALOG" hidden="true" movable="true" enableMouse="true" clampedToScreen="true" toplevel="true" virtual="true">
 	<Size>
-		<AbsDimension x="420" y="375" />
+		<AbsDimension x="450" y="375" />
 	</Size>
 	<Anchors>
 		<Anchor point="CENTER" />
@@ -85,7 +105,7 @@
 			<FontString name="$parent_Text" inherits="LHCF_Font">
 				<Anchors>
 					<Anchor point="TOPLEFT">
-					<Offset><AbsDimension x="10" y="-15"/></Offset>
+					<Offset><AbsDimension x="30" y="-50"/></Offset>
 					</Anchor>
 				</Anchors>
 				<Shadow>

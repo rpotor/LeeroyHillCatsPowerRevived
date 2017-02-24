@@ -8,7 +8,7 @@
 ------- Initialize
 
 LHCFTabs = {"fav", "oow", "wow", "games", "tv", "music", "misc"}
-LHCFSpecialEffects = {"shepard","wilhelm","neverdie"}
+LHCFSpecialEffects = {"shepard","wilhelm","neverdie","tranq"}
 
 LHCFDefaultSettings = {
 	["LHCFLanguage"] = "not set",
@@ -21,7 +21,8 @@ LHCFDefaultSettings = {
 	["LHCFSpecialEffects"] = {
 		["shepard"] = {"Shepard", true},
 		["wilhelm"] = {"Wilhelm", true},
-		["neverdie"] = {"Mercy", true}
+		["neverdie"] = {"Mercy", true},
+		["tranq"] = {"Tranquility", true}
 		},
 	["utaljuk"] = {},
 	["imadjuk"] = {}
@@ -33,65 +34,91 @@ LHCFSettingsDB = {
 -- 1: button tooltip, 2: button text, 3: additional emote, 4: emote messages, 5: sound file, 6: command, 7: type, 8: oow spec?, 9: length in seconds
 
 LHCFMaster = {}
-LHCFMaster[1] = {"Who the fuck was that?\n".."|cff007a00Dives effekt","badpull","",{"asks who the f*** was that?"},"Interface\\AddOns\\LeeroyHillCatsPower\\badpull.mp3","badpull","normal","wow",2}
-LHCFMaster[2] = {"Elkúrtuk, nem kicsit, nagyon!\n".."|cff007a00Gyurcsány Ferenc effekt","elkurtuk","",{"thinks the raid seriously screwed it up."},"Interface\\AddOns\\LeeroyHillCatsPower\\elkurtuk.mp3","elkurtuk","normal","misc",3}
-LHCFMaster[3] = {"Gooooomba!\n".."|cff007a00OOW klántag Chidori effekt","gomba","",{"is very happy to find a mushroom!"},"Interface\\AddOns\\LeeroyHillCatsPower\\gomba.mp3","gomba","normal","oow",2}
-LHCFMaster[4] = {"Hátszéééél?\n".."|cff007a00OOW klán Hátszél effekt","hatszel","",{"asks around for Hatszel."},"Interface\\AddOns\\LeeroyHillCatsPower\\hatszel.mp3","hatszel","normal","oow",1}
-LHCFMaster[5] = {"Visszük a hullákat, hozzátok a halottakat!\n".."|cff007a00Gyalog Galopp effekt","hullak","",{"asks everyone to bring out their dead!"},"Interface\\AddOns\\LeeroyHillCatsPower\\hullak.mp3","hullak","normal","tv",7}
-LHCFMaster[6] = {"Idióta!\n".."|cff007a00Jóbarátok effekt","idiota","",{"thinks there's an idiot somewhere around here!","thinks | is an idiot!"},"Interface\\AddOns\\LeeroyHillCatsPower\\idiota.mp3","idiota","targeted","tv",4}
-LHCFMaster[7] = {"Jön a rézfaszú bagoly!\n".."|cff007a00Spatzen Jodler Sextett effekt","jonarez","",{"spotted an incoming Copper Dick Owl!"},"Interface\\AddOns\\LeeroyHillCatsPower\\jonarez.mp3","jonarez","normal","music",5}
-LHCFMaster[8] = {"Kórhááááz?\n".."|cff007a00OOW klán Hátszél effekt","korhaz","",{"is not sure if this is the hospital."},"Interface\\AddOns\\LeeroyHillCatsPower\\korhaz.mp3","korhaz","normal","oow",1}
-LHCFMaster[9] = {"Segítség lehugyoz a fa!\n".."|cff007a00Rémálomföld effekt","lehugyoza","",{"needs some help against a pissing tree! "},"Interface\\AddOns\\LeeroyHillCatsPower\\lehugyoza.mp3","lehugyoza","normal","misc",2}
-LHCFMaster[10] = {"Ééértem?\n".."|cff007a00South Park Mackey bácsi effekt","mkay","",{"would like to know if everyone understood that clearly."},"Interface\\AddOns\\LeeroyHillCatsPower\\mkay.mp3","mkay","normal","tv",1}
-LHCFMaster[11] = {"RwlRwlRwlRwl!\n".."|cff007a00I'm murloc effekt","murloc","",{"is a murloc! RwlRwlRwlRwl!"},"Interface\\AddOns\\LeeroyHillCatsPower\\murloc.mp3","murloc","normal","wow",1}
-LHCFMaster[12] = {"Hey Gandalf, nice dress!\n".."|cff007a00Red Fang effekt","nicedress","",{"thinks that's a nice dress!","thinks | has a nice dress!"},"Interface\\AddOns\\LeeroyHillCatsPower\\nicedress.mp3","nicedress","targeted","music",5}
-LHCFMaster[13] = {"Háááát peeersze!\n".."|cff007a00OOW klántag Chidori effekt","persze","",{"thinks someone is not being entirely honest!"},"Interface\\AddOns\\LeeroyHillCatsPower\\persze.mp3","persze","normal","oow",2}
-LHCFMaster[14] = {"Pókmalac!\n".."|cff007a00The Simpsons család effekt","pokmalac","",{"saw a spiderpig!"},"Interface\\AddOns\\LeeroyHillCatsPower\\pokmalac.mp3","pokmalac","normal","tv",15}
-LHCFMaster[15] = {"Trollololol!\n".."|cff007a00Eduard Khil effekt","trollololol","dance",{"gives it some trollololol"},"Interface\\AddOns\\LeeroyHillCatsPower\\trollololol.mp3","trollololol","normal","music",5}
-LHCFMaster[16] = {"UFOPORNOOOO! JONKUN KOTONA!\n".."|cff007a00Ranuan Kummit effekt","ufo","",{"thinks the UFOs are having a party!"},"Interface\\AddOns\\LeeroyHillCatsPower\\ufo.mp3","ufo","normal","misc",5}
-LHCFMaster[17] = {"Vissza menjél! Baszki!\n".."|cff007a00NacsaFon effekt","vissza","",{"tries to hold back Chewbacca with an umbrella!","tries to hold back | with an umbrella!"},"Interface\\AddOns\\LeeroyHillCatsPower\\vissza.mp3","vissza","targeted","misc",3}
-LHCFMaster[18] = {"Badger! Badger! Mushroom! Mushroom!\n".."|cff007a00Badger dance effekt","badget","dance",{"does the badger dance.","does the badger dance with |."},"Interface\\AddOns\\LeeroyHillCatsPower\\badget.mp3","badget","targeted","misc",12}
-LHCFMaster[19] = {"Boldog születésnapot!\n".."|cff007a00Halász Judit effekt","boldog","",{"wishes everyone a Happy birthday!","wishes | a Happy birthday!"},"Interface\\AddOns\\LeeroyHillCatsPower\\boldog.mp3","boldog","targeted","music",12}
-LHCFMaster[20] = {"FCKG BLIIIZARD!\n".."|cff007a00WOW password change effekt","fckbliz","",{"thinks Blizzard really screwed it up this time."},"Interface\\AddOns\\LeeroyHillCatsPower\\fckbliz.mp3","fckbliz","normal","wow",6}
-LHCFMaster[21] = {"Silence! I kill you!\n".."|cff007a00Ahmed the dead terrorist effekt","ikillyou","",{"asks everyone to be silent or else.","asks | to be silent or else."},"Interface\\AddOns\\LeeroyHillCatsPower\\ikillyou.mp3","ikillyou","targeted","misc",13}
-LHCFMaster[22] = {"OMG they killed Kenny!\n".."|cff007a00South Park effekt","kenny","",{"saw that those bastards killed Kenny again."},"Interface\\AddOns\\LeeroyHillCatsPower\\kenny.mp3","kenny","normal","tv",7}
-LHCFMaster[23] = {"Keyboard cat!\n".."|cff007a00Charlie Schmidt effekt","keycat","",{"gives it some keyboard cat!"},"Interface\\AddOns\\LeeroyHillCatsPower\\keycat.mp3","keycat","normal","misc",7}
-LHCFMaster[24] = {"Ölj!\n".."|cff007a00Susogós mackók effekt","olj","",{"asks everyone to kill someone."},"Interface\\AddOns\\LeeroyHillCatsPower\\olj.mp3","olj","normal","tv",15}
-LHCFMaster[25] = {"You are not Prepared!\n".."|cff007a00WOW Illidan effekt","prepared","",{"thinks nobody is prepared for this."},"Interface\\AddOns\\LeeroyHillCatsPower\\prepared.mp3","prepared","normal","wow",3}
-LHCFMaster[26] = {"DAAAAAAAAAAAAH!\n".."|cff007a00Rayman raving rabbids effekt","rabbids","",{"yells DAAAAAAAAAAAAH!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rabbids.mp3","rabbids","normal","games",12}
-LHCFMaster[27] = {"Rick Astley - Never gonna give you up!\n".."|cff007a00Rick Astley effekt","rickastley","dance",{"has just rickrolled everyone!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rickastley.mp3","rickastley","normal","music",18}
-LHCFMaster[28] = {"Rouges do it from behind!\n".."|cff007a00L70ETC effekt","rouges","",{"likes to do it from behind!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rouges.mp3","rouges","normal","wow",6}
-LHCFMaster[29] = {"Swedishmeal!\n".."|cff007a00Swedish meal time effekt","swedishmeal","",{"cooks up a swedish meal."},"Interface\\AddOns\\LeeroyHillCatsPower\\swedishmeal.mp3","swedishmeal","normal","misc",6}
-LHCFMaster[30] = {"Szőke cigány!\n".."|cff007a00Youtube effekt","szokecigany","",{"has spotted a blond gypsy!"},"Interface\\AddOns\\LeeroyHillCatsPower\\szokecigany.mp3","szokecigany","normal","misc",4}
-LHCFMaster[31] = {"Tick-tack!\n".."|cff007a0024 effekt","ticktack","",{"thinks Jack Bauer is running out of time!"},"Interface\\AddOns\\LeeroyHillCatsPower\\ticktack.mp3","ticktack","normal","tv",4}
-LHCFMaster[32] = {"Benny Hill theme\n".."|cff007a00Az eredeti LeeroyHillCatsPower addon effektje","bennyhill","dance",{"gives it some Benny Hill!"},"Interface\\AddOns\\LeeroyHillCatsPower\\bennyhill.mp3","bennyhill","normal","tv",40}
-LHCFMaster[33] = {"Flawless Victory!\n".."|cff007a00Mortal Kombat effekt","flawless","",{"declares a Flawless Victory!"},"Interface\\AddOns\\LeeroyHillCatsPower\\flawless.mp3","flawless","normal","games",2}
-LHCFMaster[34] = {"GOD LIKE!\n".."|cff007a00Unreal Tournament effekt","godlike","",{"is a GOD!"},"Interface\\AddOns\\LeeroyHillCatsPower\\godlike.mp3","godlike","normal","games",1}
-LHCFMaster[35] = {"HOLY SHIT!\n".."|cff007a00Unreal Tournament effekt","hshit","",{"is really amazed."},"Interface\\AddOns\\LeeroyHillCatsPower\\hshit.mp3","hsit","normal","games",3}
-LHCFMaster[36] = {"Headshot!\n".."|cff007a00Unreal Tournament effekt","hshot","",{"shot someone in the head! Ouch!","shot | in the head! Ouch!"},"Interface\\AddOns\\LeeroyHillCatsPower\\hshot.mp3","hshot","targeted","games",2}
-LHCFMaster[37] = {"KILLING SPREE!\n".."|cff007a00Unreal Tournament effekt","killingspree","",{"is on a Killing Spree!"},"Interface\\AddOns\\LeeroyHillCatsPower\\killingspree.mp3","killingspree","normal","games",2}
-LHCFMaster[38] = {"Leeeeeeeeeeroy Jenkins!\n".."|cff007a00Az eredeti addon effektje","leeroy","",{"invokes the power of Leeroy Jenkins!"},"Interface\\AddOns\\LeeroyHillCatsPower\\leeroy.mp3","leeroy","normal","wow",4}
-LHCFMaster[39] = {"There is no spoon!\n".."|cff007a00The Matrix effekt","matrix","",{"dodges bullets."},"Interface\\AddOns\\LeeroyHillCatsPower\\matrix.mp3","matrix","normal","tv",18}
-LHCFMaster[40] = {"MONSTER KILL!\n".."|cff007a00Unreal Tournament effekt","monsterkill","",{"is a monster!"},"Interface\\AddOns\\LeeroyHillCatsPower\\monsterkill.mp3","monsterkill","normal","games",4}
-LHCFMaster[41] = {"I don't see enough DOTs! More DOTs now!\n".."|cff007a00Dives effekt","moredots1","",{"doesn't see enough DOTs!","orders | to apply more DOTs!"},"Interface\\AddOns\\LeeroyHillCatsPower\\moredots1.mp3","moredots1","targeted","wow",2}
-LHCFMaster[42] = {"Throw more DOTs, more DOTs, more DOTs, come on more DOTs!\n".."|cff007a00Dives effekt","moredots2","",{"orders the raid to throw more DOTs!"," orders | to throw more DOTs!"},"Interface\\AddOns\\LeeroyHillCatsPower\\moredots2.mp3","moredots2","targeted","wow",4}
-LHCFMaster[43] = {"Nem!\n".."|cff007a00Gábor a hegyröl effekt","nem","",{"clearly states: NO!"},"Interface\\AddOns\\LeeroyHillCatsPower\\nem.mp3","nem","normal","misc",1}
-LHCFMaster[44] = {"RAMPAGE!\n".."|cff007a00Unreal Tournament effekt","rampage","",{"is on a RAMPAGE!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rampage.mp3","rampage","normal","games",2}
-LHCFMaster[45] = {"GOD LIKE! (sexy babe version)\n".."|cff007a00Unreal Tournament effekt","sgodlike","",{"thinks someone really feels good."},"Interface\\AddOns\\LeeroyHillCatsPower\\sgodlike.mp3","sgodlike","normal","games",2}
-LHCFMaster[46] = {"Thundercats HO!\n".."|cff007a00Az eredeti LeeroyHillCatsPower addon effektje","thuncat","",{"screams Thundercats HO!"},"Interface\\AddOns\\LeeroyHillCatsPower\\thundercatsho.mp3","thuncat","normal","tv",6}
-LHCFMaster[47] = {"ULTRA KILL!\n".."|cff007a00Unreal Tournament effekt","ultrakill","",{"has become invincible!"},"Interface\\AddOns\\LeeroyHillCatsPower\\ultrakill.mp3","ultrakill","normal","games",2}
-LHCFMaster[48] = {"UNSTOPPABLE!\n".."|cff007a00Unreal Tournament effekt","unstoppable","",{"is unstoppable!"},"Interface\\AddOns\\LeeroyHillCatsPower\\unstoppable.mp3","unstoppable","normal","games",2}
-LHCFMaster[49] = {"MULTI KILL!\n".."|cff007a00Unreal Tournament effekt","xkill","",{"is a mindless killer!"},"Interface\\AddOns\\LeeroyHillCatsPower\\xkill.mp3","xkill","normal","games",2}
-LHCFMaster[50] = {"By the power of GREYSKULL!\n".."|cff007a00Az eredeti LeeroyHillCatsPower addon effektje","power","",{"screams BY THE POWER OF GREYSKULL!"},"Interface\\AddOns\\LeeroyHillCatsPower\\heman.mp3","power","normal","tv",10}
-LHCFMaster[51] = {"That's a fucking fifty DKP minus!\n".."|cff007a00Dives effekt","50dkp","",{"hands out 50 DKP minus!"},"Interface\\AddOns\\LeeroyHillCatsPower\\50dkp.mp3","fifty","normal","wow",3}
-LHCFMaster[52] = {"Puska kellett volna bazdmeg!\n".."|cff007a00Pulp Fiction effekt","puska","",{"thinks we should have shotguns for this kind of deal."},"Interface\\AddOns\\LeeroyHillCatsPower\\puska.mp3","puska","normal","tv",2}
-LHCFMaster[53] = {"Now handle it!\n".."|cff007a00Dives effekt","handle","",{"orders the raid to handle it!","orders | to handle it!"},"Interface\\AddOns\\LeeroyHillCatsPower\\handleit.mp3","handle","targeted","wow",1}
-LHCFMaster[54] = {"Now hit it very hard and very fast!\n".."|cff007a00Dives effekt","hithard","",{"orders the raid to hit it hard!","orders | to hit it hard!"},"Interface\\AddOns\\LeeroyHillCatsPower\\hithard.mp3","hithard","targeted","wow",2}
-LHCFMaster[55] = {"Come on, more DPS ... hit it like you mean it!\n".."|cff007a00Dives effekt","hitit","",{"orders the raid DPS to stop slacking!","orders | to stop slacking and pewpew seriously!"},"Interface\\AddOns\\LeeroyHillCatsPower\\hitit.mp3","hitit","targeted","wow",3}
-LHCFMaster[56] = {"Run to the center!\n".."|cff007a00Dives effekt","runto","",{"orders the raid to run to the center!","orders | to run to the center!"},"Interface\\AddOns\\LeeroyHillCatsPower\\runto.mp3","runto","targeted","wow",1}
-LHCFMaster[57] = {"Most megvagy, a kurva anyád!\n".."|cff007a00South Park Al Gore effekt","megvagy","",{"has spotted the ManBearPig!"},"Interface\\AddOns\\LeeroyHillCatsPower\\megvagy.mp3","megvagy","normal","tv",3}
-LHCFMaster[58] = {"Indítjuk az órát, emeljük a búrát... MOST!\n".."|cff007a00Telemázli effekt","inditjuk","",{"starts the clock."},"Interface\\AddOns\\LeeroyHillCatsPower\\inditjuk.mp3","inditjuk","normal","tv",2}
-LHCFMaster[59] = {"","neverdie","",{"never dies!"},"Interface\\AddOns\\LeeroyHillCatsPower\\neverdie.mp3","","normal","hidden",2}
+table.insert(LHCFMaster, {"Who the fuck was that?\n".."|cff007a00Dives effekt","badpull","",{"asks who the f*** was that?"},"Interface\\AddOns\\LeeroyHillCatsPower\\badpull.mp3","badpull","normal","wow",2})
+table.insert(LHCFMaster, {"Elkúrtuk, nem kicsit, nagyon!\n".."|cff007a00Gyurcsány Ferenc effekt","elkurtuk","",{"thinks the raid seriously screwed it up."},"Interface\\AddOns\\LeeroyHillCatsPower\\elkurtuk.mp3","elkurtuk","normal","misc",3})
+table.insert(LHCFMaster, {"Gooooomba!\n".."|cff007a00OOW klán - Chidori effekt","gomba","",{"is very happy to find a mushroom!"},"Interface\\AddOns\\LeeroyHillCatsPower\\gomba.mp3","gomba","normal","oow",2})
+table.insert(LHCFMaster, {"Hátszéééél?\n".."|cff007a00OOW klán - Hátszél effekt","hatszel","",{"asks around for Hatszel."},"Interface\\AddOns\\LeeroyHillCatsPower\\hatszel.mp3","hatszel","normal","oow",1})
+table.insert(LHCFMaster, {"Visszük a hullákat, hozzátok a halottakat!\n".."|cff007a00Gyalog Galopp effekt","hullak","",{"asks everyone to bring out their dead!"},"Interface\\AddOns\\LeeroyHillCatsPower\\hullak.mp3","hullak","normal","tv",7})
+table.insert(LHCFMaster, {"Idióta!\n".."|cff007a00Jóbarátok effekt","idiota","",{"thinks there's an idiot somewhere around here!","thinks | is an idiot!"},"Interface\\AddOns\\LeeroyHillCatsPower\\idiota.mp3","idiota","targeted","tv",4})
+table.insert(LHCFMaster, {"Jön a rézfaszú bagoly!\n".."|cff007a00Spatzen Jodler Sextett effekt","jonarez","",{"spotted an incoming Copper Dick Owl!"},"Interface\\AddOns\\LeeroyHillCatsPower\\jonarez.mp3","jonarez","normal","music",5})
+table.insert(LHCFMaster, {"Kórhááááz?\n".."|cff007a00OOW klán Hátszél effekt","korhaz","",{"is not sure if this is the hospital."},"Interface\\AddOns\\LeeroyHillCatsPower\\korhaz.mp3","korhaz","normal","oow",1})
+table.insert(LHCFMaster, {"Segítség lehugyoz a fa!\n".."|cff007a00Rémálomföld effekt","lehugyoza","",{"needs some help against a pissing tree! "},"Interface\\AddOns\\LeeroyHillCatsPower\\lehugyoza.mp3","lehugyoza","normal","misc",2})
+table.insert(LHCFMaster, {"Ééértem?\n".."|cff007a00South Park Mackey bácsi effekt","mkay","",{"would like to know if everyone understood that clearly."},"Interface\\AddOns\\LeeroyHillCatsPower\\mkay.mp3","mkay","normal","tv",1})
+table.insert(LHCFMaster, {"RwlRwlRwlRwl!\n".."|cff007a00I'm murloc effekt","murloc","",{"is a murloc! RwlRwlRwlRwl!"},"Interface\\AddOns\\LeeroyHillCatsPower\\murloc.mp3","murloc","normal","wow",1})
+table.insert(LHCFMaster, {"Hey Gandalf, nice dress!\n".."|cff007a00Red Fang effekt","nicedress","",{"thinks that's a nice dress!","thinks | has a nice dress!"},"Interface\\AddOns\\LeeroyHillCatsPower\\nicedress.mp3","nicedress","targeted","music",5})
+table.insert(LHCFMaster, {"Háááát peeersze!\n".."|cff007a00OOW klántag Chidori effekt","persze","",{"thinks someone is not being entirely honest!"},"Interface\\AddOns\\LeeroyHillCatsPower\\persze.mp3","persze","normal","oow",2})
+table.insert(LHCFMaster, {"Pókmalac!\n".."|cff007a00The Simpsons család effekt","pokmalac","",{"saw a spiderpig!"},"Interface\\AddOns\\LeeroyHillCatsPower\\pokmalac.mp3","pokmalac","normal","tv",15})
+table.insert(LHCFMaster, {"Trollololol!\n".."|cff007a00Eduard Khil effekt","trollololol","dance",{"gives it some trollololol"},"Interface\\AddOns\\LeeroyHillCatsPower\\trollololol.mp3","trollololol","normal","music",5})
+table.insert(LHCFMaster, {"UFOPORNOOOO! JONKUN KOTONA!\n".."|cff007a00Ranuan Kummit effekt","ufo","",{"thinks the UFOs are having a party!"},"Interface\\AddOns\\LeeroyHillCatsPower\\ufo.mp3","ufo","normal","misc",5})
+table.insert(LHCFMaster, {"Vissza menjél! Baszki!\n".."|cff007a00NacsaFon effekt","vissza","",{"tries to hold back Chewbacca with an umbrella!","tries to hold back | with an umbrella!"},"Interface\\AddOns\\LeeroyHillCatsPower\\vissza.mp3","vissza","targeted","misc",3})
+table.insert(LHCFMaster, {"Badger! Badger! Mushroom! Mushroom!\n".."|cff007a00Badger dance effekt","badget","dance",{"does the badger dance.","does the badger dance with |."},"Interface\\AddOns\\LeeroyHillCatsPower\\badget.mp3","badget","targeted","misc",12})
+table.insert(LHCFMaster, {"Boldog születésnapot!\n".."|cff007a00Halász Judit effekt","boldog","",{"wishes everyone a Happy birthday!","wishes | a Happy birthday!"},"Interface\\AddOns\\LeeroyHillCatsPower\\boldog.mp3","boldog","targeted","music",12})
+table.insert(LHCFMaster, {"FCKG BLIIIZARD!\n".."|cff007a00WOW password change effekt","fckbliz","",{"thinks Blizzard really screwed it up this time."},"Interface\\AddOns\\LeeroyHillCatsPower\\fckbliz.mp3","fckbliz","normal","wow",6})
+table.insert(LHCFMaster, {"Silence! I kill you!\n".."|cff007a00Ahmed the dead terrorist effekt","ikillyou","",{"asks everyone to be silent or else.","asks | to be silent or else."},"Interface\\AddOns\\LeeroyHillCatsPower\\ikillyou.mp3","ikillyou","targeted","misc",13})
+table.insert(LHCFMaster, {"OMG they killed Kenny!\n".."|cff007a00South Park effekt","kenny","",{"saw that those bastards killed Kenny again."},"Interface\\AddOns\\LeeroyHillCatsPower\\kenny.mp3","kenny","normal","tv",7})
+table.insert(LHCFMaster, {"Keyboard cat!\n".."|cff007a00Charlie Schmidt effekt","keycat","",{"gives it some keyboard cat!"},"Interface\\AddOns\\LeeroyHillCatsPower\\keycat.mp3","keycat","normal","misc",7})
+table.insert(LHCFMaster, {"Ölj!\n".."|cff007a00Susogós mackók effekt","olj","",{"asks everyone to kill someone."},"Interface\\AddOns\\LeeroyHillCatsPower\\olj.mp3","olj","normal","tv",15})
+table.insert(LHCFMaster, {"You are not Prepared!\n".."|cff007a00WOW Illidan effekt","prepared","",{"thinks nobody is prepared for this."},"Interface\\AddOns\\LeeroyHillCatsPower\\prepared.mp3","prepared","normal","wow",3})
+table.insert(LHCFMaster, {"DAAAAAAAAAAAAH!\n".."|cff007a00Rayman raving rabbids effekt","rabbids","",{"yells DAAAAAAAAAAAAH!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rabbids.mp3","rabbids","normal","games",12})
+table.insert(LHCFMaster, {"Rick Astley - Never gonna give you up!\n".."|cff007a00Rick Astley effekt","rickastley","dance",{"has just rickrolled everyone!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rickastley.mp3","rickastley","normal","music",18})
+table.insert(LHCFMaster, {"Rouges do it from behind!\n".."|cff007a00L70ETC effekt","rouges","",{"likes to do it from behind!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rouges.mp3","rouges","normal","wow",6})
+table.insert(LHCFMaster, {"Swedishmeal!\n".."|cff007a00Swedish meal time effekt","swedishmeal","",{"cooks up a swedish meal."},"Interface\\AddOns\\LeeroyHillCatsPower\\swedishmeal.mp3","swedishmeal","normal","misc",6})
+table.insert(LHCFMaster, {"Szőke cigány!\n".."|cff007a00Youtube effekt","szokecigany","",{"has spotted a blond gypsy!"},"Interface\\AddOns\\LeeroyHillCatsPower\\szokecigany.mp3","szokecigany","normal","misc",4})
+table.insert(LHCFMaster, {"Tick-tack!\n".."|cff007a0024 effekt","ticktack","",{"thinks Jack Bauer is running out of time!"},"Interface\\AddOns\\LeeroyHillCatsPower\\ticktack.mp3","ticktack","normal","tv",4})
+table.insert(LHCFMaster, {"Benny Hill theme\n".."|cff007a00Az eredeti LeeroyHillCatsPower addon effektje","bennyhill","dance",{"gives it some Benny Hill!"},"Interface\\AddOns\\LeeroyHillCatsPower\\bennyhill.mp3","bennyhill","normal","tv",40})
+table.insert(LHCFMaster, {"Flawless Victory!\n".."|cff007a00Mortal Kombat effekt","flawless","",{"declares a Flawless Victory!"},"Interface\\AddOns\\LeeroyHillCatsPower\\flawless.mp3","flawless","normal","games",2})
+table.insert(LHCFMaster, {"GOD LIKE!\n".."|cff007a00Unreal Tournament effekt","godlike","",{"is a GOD!"},"Interface\\AddOns\\LeeroyHillCatsPower\\godlike.mp3","godlike","normal","games",1})
+table.insert(LHCFMaster, {"HOLY SHIT!\n".."|cff007a00Unreal Tournament effekt","hshit","",{"is really amazed."},"Interface\\AddOns\\LeeroyHillCatsPower\\hshit.mp3","hsit","normal","games",3})
+table.insert(LHCFMaster, {"Headshot!\n".."|cff007a00Unreal Tournament effekt","hshot","",{"shot someone in the head! Ouch!","shot | in the head! Ouch!"},"Interface\\AddOns\\LeeroyHillCatsPower\\hshot.mp3","hshot","targeted","games",2})
+table.insert(LHCFMaster, {"KILLING SPREE!\n".."|cff007a00Unreal Tournament effekt","killingspree","",{"is on a Killing Spree!"},"Interface\\AddOns\\LeeroyHillCatsPower\\killingspree.mp3","killingspree","normal","games",2})
+table.insert(LHCFMaster, {"Leeeeeeeeeeroy Jenkins!\n".."|cff007a00Az eredeti addon effektje","leeroy","",{"invokes the power of Leeroy Jenkins!"},"Interface\\AddOns\\LeeroyHillCatsPower\\leeroy.mp3","leeroy","normal","wow",4})
+table.insert(LHCFMaster, {"There is no spoon!\n".."|cff007a00The Matrix effekt","matrix","",{"dodges bullets."},"Interface\\AddOns\\LeeroyHillCatsPower\\matrix.mp3","matrix","normal","tv",18})
+table.insert(LHCFMaster, {"MONSTER KILL!\n".."|cff007a00Unreal Tournament effekt","monsterkill","",{"is a monster!"},"Interface\\AddOns\\LeeroyHillCatsPower\\monsterkill.mp3","monsterkill","normal","games",4})
+table.insert(LHCFMaster, {"I don't see enough DOTs! More DOTs now!\n".."|cff007a00Dives effekt","moredots1","",{"doesn't see enough DOTs!","orders | to apply more DOTs!"},"Interface\\AddOns\\LeeroyHillCatsPower\\moredots1.mp3","moredots1","targeted","wow",2})
+table.insert(LHCFMaster, {"Throw more DOTs, more DOTs, more DOTs, come on more DOTs!\n".."|cff007a00Dives effekt","moredots2","",{"orders the raid to throw more DOTs!"," orders | to throw more DOTs!"},"Interface\\AddOns\\LeeroyHillCatsPower\\moredots2.mp3","moredots2","targeted","wow",4})
+table.insert(LHCFMaster, {"Nem!\n".."|cff007a00Gábor a hegyröl effekt","nem","",{"clearly states: NO!"},"Interface\\AddOns\\LeeroyHillCatsPower\\nem.mp3","nem","normal","misc",1})
+table.insert(LHCFMaster, {"RAMPAGE!\n".."|cff007a00Unreal Tournament effekt","rampage","",{"is on a RAMPAGE!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rampage.mp3","rampage","normal","games",2})
+table.insert(LHCFMaster, {"GOD LIKE! (sexy babe version)\n".."|cff007a00Unreal Tournament effekt","sgodlike","",{"thinks someone really feels good."},"Interface\\AddOns\\LeeroyHillCatsPower\\sgodlike.mp3","sgodlike","normal","games",2})
+table.insert(LHCFMaster, {"Thundercats HO!\n".."|cff007a00Az eredeti LeeroyHillCatsPower addon effektje","thuncat","",{"screams Thundercats HO!"},"Interface\\AddOns\\LeeroyHillCatsPower\\thundercatsho.mp3","thuncat","normal","tv",6})
+table.insert(LHCFMaster, {"ULTRA KILL!\n".."|cff007a00Unreal Tournament effekt","ultrakill","",{"has become invincible!"},"Interface\\AddOns\\LeeroyHillCatsPower\\ultrakill.mp3","ultrakill","normal","games",2})
+table.insert(LHCFMaster, {"UNSTOPPABLE!\n".."|cff007a00Unreal Tournament effekt","unstoppable","",{"is unstoppable!"},"Interface\\AddOns\\LeeroyHillCatsPower\\unstoppable.mp3","unstoppable","normal","games",2})
+table.insert(LHCFMaster, {"MULTI KILL!\n".."|cff007a00Unreal Tournament effekt","xkill","",{"is a mindless killer!"},"Interface\\AddOns\\LeeroyHillCatsPower\\xkill.mp3","xkill","normal","games",2})
+table.insert(LHCFMaster, {"By the power of GREYSKULL!\n".."|cff007a00Az eredeti LeeroyHillCatsPower addon effektje","power","",{"screams BY THE POWER OF GREYSKULL!"},"Interface\\AddOns\\LeeroyHillCatsPower\\heman.mp3","power","normal","tv",10})
+table.insert(LHCFMaster, {"That's a fucking fifty DKP minus!\n".."|cff007a00Dives effekt","50dkp","",{"hands out 50 DKP minus!"},"Interface\\AddOns\\LeeroyHillCatsPower\\50dkp.mp3","fifty","normal","wow",3})
+table.insert(LHCFMaster, {"Puska kellett volna bazdmeg!\n".."|cff007a00Pulp Fiction effekt","puska","",{"thinks we should have shotguns for this kind of deal."},"Interface\\AddOns\\LeeroyHillCatsPower\\puska.mp3","puska","normal","tv",2})
+table.insert(LHCFMaster, {"Now handle it!\n".."|cff007a00Dives effekt","handle","",{"orders the raid to handle it!","orders | to handle it!"},"Interface\\AddOns\\LeeroyHillCatsPower\\handleit.mp3","handle","targeted","wow",1})
+table.insert(LHCFMaster, {"Now hit it very hard and very fast!\n".."|cff007a00Dives effekt","hithard","",{"orders the raid to hit it hard!","orders | to hit it hard!"},"Interface\\AddOns\\LeeroyHillCatsPower\\hithard.mp3","hithard","targeted","wow",2})
+table.insert(LHCFMaster, {"Come on, more DPS ... hit it like you mean it!\n".."|cff007a00Dives effekt","hitit","",{"orders the raid DPS to stop slacking!","orders | to stop slacking and pewpew seriously!"},"Interface\\AddOns\\LeeroyHillCatsPower\\hitit.mp3","hitit","targeted","wow",3})
+table.insert(LHCFMaster, {"Run to the center!\n".."|cff007a00Dives effekt","runto","",{"orders the raid to run to the center!","orders | to run to the center!"},"Interface\\AddOns\\LeeroyHillCatsPower\\runto.mp3","runto","targeted","wow",1})
+table.insert(LHCFMaster, {"Most megvagy, a kurva anyád!\n".."|cff007a00South Park Al Gore effekt","megvagy","",{"has spotted the ManBearPig!"},"Interface\\AddOns\\LeeroyHillCatsPower\\megvagy.mp3","megvagy","normal","tv",3})
+table.insert(LHCFMaster, {"Indítjuk az órát, emeljük a búrát... MOST!\n".."|cff007a00Telemázli effekt","inditjuk","",{"starts the clock."},"Interface\\AddOns\\LeeroyHillCatsPower\\inditjuk.mp3","inditjuk","normal","tv",2})
+table.insert(LHCFMaster, {"","neverdie","",{"never dies!"},"Interface\\AddOns\\LeeroyHillCatsPower\\neverdie.mp3","","normal","hidden",2})
+table.insert(LHCFMaster, {"Batman theme","batman","",{"is happy to see Batman."},"Interface\\AddOns\\LeeroyHillCatsPower\\batman.mp3","batman","normal","music",11})
+table.insert(LHCFMaster, {"Ben Brode laugh\n".."|cff007a00Ben Brode effekt","brodelol","",{"thinks Ben Brode is somewhere around here."},"Interface\\AddOns\\LeeroyHillCatsPower\\brodelol.mp3","brodelol","normal","misc",3})
+table.insert(LHCFMaster, {"Get to the chopper!\n".."|cff007a00Predator effekt","chopper","",{"gives the order to evacuate on the chopper."},"Interface\\AddOns\\LeeroyHillCatsPower\\chopper.mp3","chopper","normal","tv",5})
+table.insert(LHCFMaster, {"Put that cookie down, NOW!\n".."|cff007a00Jingle All the Way effekt","cookie","",{"warns everyone to put their cookies down.","warns | to put the cookie down."},"Interface\\AddOns\\LeeroyHillCatsPower\\cookie.mp3","cookie","targeted","tv",2})
+table.insert(LHCFMaster, {"Jó, kiegyezek veled döntetlenben!\n".."|cff007a00Gyalog Galopp effekt","dontetlen","",{"proposes to call this a draw."},"Interface\\AddOns\\LeeroyHillCatsPower\\dontetlen.mp3","dontetlen","normal","tv",3})
+table.insert(LHCFMaster, {"All who rise against the Legion are doomed!\n".."|cff007a00General Xakal effekt","doomed","",{"warns everyone not to rise against the Legion."},"Interface\\AddOns\\LeeroyHillCatsPower\\doomed.mp3","doomed","normal","wow",5})
+table.insert(LHCFMaster, {"Hát... ez van!\n".."|cff007a00Január, a gólya effekt","ezvan","",{"mourns the death of January, the stork."},"Interface\\AddOns\\LeeroyHillCatsPower\\ezvan.mp3","ezvan","normal","misc",2})
+table.insert(LHCFMaster, {"Falcon Punch!\n".."|cff007a00F-Zero effekt","falcon","",{"delivers a Falcon Punch."},"Interface\\AddOns\\LeeroyHillCatsPower\\falcon.mp3","falcon","normal","tv",4})
+table.insert(LHCFMaster, {"Fly you fools!\n".."|cff007a00Gyűrűk Ura effekt","fussatok","",{"suggests a hasty retreat."},"Interface\\AddOns\\LeeroyHillCatsPower\\fussatok.mp3","fussatok","normal","tv",2})
+table.insert(LHCFMaster, {"An illusion... what are you hiding?\n".."|cff007a00Suramar effekt","illusion","",{"thinks someone is hiding something.", "thinks | is under the veil of an illusion!"},"Interface\\AddOns\\LeeroyHillCatsPower\\illusion.mp3","illusion","targeted","wow",4})
+table.insert(LHCFMaster, {"I am the one who knocks!\n".."|cff007a00Breaking Bad effekt","knock","",{"knocks on the door."},"Interface\\AddOns\\LeeroyHillCatsPower\\knock.mp3","knock","normal","tv",2})
+table.insert(LHCFMaster, {"Kono Dio DA!\n".."|cff007a00Jojo's Bizarre Adventure effekt","konodio","",{"thinks Dio Brando is nearby."},"Interface\\AddOns\\LeeroyHillCatsPower\\konodio.mp3","konodio","normal","tv",1})
+table.insert(LHCFMaster, {"Vingardium Leviosa!\n".."|cff007a00Harry Potter effekt","leviosa","",{"lifts up Hermione's skirt with the spell Vingardium Leviosa."},"Interface\\AddOns\\LeeroyHillCatsPower\\leviosa.mp3","leviosa","normal","tv",4})
+table.insert(LHCFMaster, {"Lord of the Rings theme\n".."|cff007a00OOW klán - Pio effekt","lotr","",{"invokes the demonic chanting of Pulsaurons, echoing through the air."},"Interface\\AddOns\\LeeroyHillCatsPower\\lotr.mp3","lotr","normal","oow",9})
+table.insert(LHCFMaster, {"Good Morning! Nice day for fishin' ain't it?\n".."|cff007a00Epic NPC Man effekt","niceday","",{"thinks this is a nice day for fishing."},"Interface\\AddOns\\LeeroyHillCatsPower\\niceday.mp3","niceday","normal","wow",5})
+table.insert(LHCFMaster, {"Something's not quite right!\n".."|cff007a00Suramar effekt","notright","",{"thinks something's not quite right.", "thinks something's not quite right with |."},"Interface\\AddOns\\LeeroyHillCatsPower\\notright.mp3","notright","targeted","wow",2})
+table.insert(LHCFMaster, {"Nyomják meg a piros gombot és nyugodjanak békében!\n".."|cff007a00Macskafogó effekt","nyugodjanak","",{"encourages everyone to press the red button."},"Interface\\AddOns\\LeeroyHillCatsPower\\nyugodjanak.mp3","nyugodjanak","normal","tv",3})
+table.insert(LHCFMaster, {"Vegeta, what does the scouter say about its power level? It's over 9000!\n".."|cff007a00Dragon Ball Z effekt","over9000","",{"asks around for a quick power level estimate."},"Interface\\AddOns\\LeeroyHillCatsPower\\over9000.mp3","over9000","normal","tv",9})
+table.insert(LHCFMaster, {"You spin me right round, baby, right round!\n".."|cff007a00Dead or Alive effekt","rightround","",{"spins right round, like a record, baby!"},"Interface\\AddOns\\LeeroyHillCatsPower\\rightround.mp3","rightround","normal","music",9})
+table.insert(LHCFMaster, {"Road Roller DA!\n".."|cff007a00Jojo's Bizarre Adventure effekt","roadroll","",{"performs a Road Roller. Impressive!"},"Interface\\AddOns\\LeeroyHillCatsPower\\roadroll.mp3","roadroll","normal","tv",2})
+table.insert(LHCFMaster, {"Noooo! I too have proved my worth Odyn!\n".."|cff007a00God King Skovald effekt","skovald","",{"objects Odyn's ruling."},"Interface\\AddOns\\LeeroyHillCatsPower\\skovald.mp3","skovald","normal","wow",5})
+table.insert(LHCFMaster, {"The juices need a little massaging!\n".."|cff007a00Suramar vineyard quest effekt","squish","",{"jumps in the vat to squish the mixture around."},"Interface\\AddOns\\LeeroyHillCatsPower\\squish.mp3","squish","normal","wow",8})
+table.insert(LHCFMaster, {"Touchy, touchy!\n".."|cff007a00Helya effekt","touchy","",{"feels the touch of Helya's tentacles."},"Interface\\AddOns\\LeeroyHillCatsPower\\touchy.mp3","touchy","normal","wow",2})
+table.insert(LHCFMaster, {"Curb Your Enthusiasm theme\n".."|cff007a00Curb Your Enthusiasm effekt","curb","",{"thinks everyone should curb their enthusiasm a little."},"Interface\\AddOns\\LeeroyHillCatsPower\\curb.mp3","curb","normal","tv",7})
+table.insert(LHCFMaster, {"Yeah Mr. White! Yeah science!\n".."|cff007a00Breaking Bad effekt","science","",{"strongly believes in science."},"Interface\\AddOns\\LeeroyHillCatsPower\\science.mp3","science","normal","tv",3})
+table.insert(LHCFMaster, {"Now, say my name!\n".."|cff007a00Breaking Bad effekt","heisenberg","",{"decides to break bad for a change."},"Interface\\AddOns\\LeeroyHillCatsPower\\heisenberg.mp3","heisenberg","normal","tv",7})
 
 for i,v in ipairs(LHCFMaster) do
 	LHCFDefaultSettings.utaljuk[v[2]] = false
@@ -244,6 +271,7 @@ function LHCF_SettingsBuilder()
 	LHCF_SettingsFrameCheckshepard:SetPoint("TOPLEFT", SettingsSpecEffects, "BOTTOMLEFT", 0, -10)
 	LHCF_SettingsFrameCheckwilhelm:SetPoint("TOPLEFT", LHCF_SettingsFrameCheckshepard, "TOPRIGHT", 70, 0)
 	LHCF_SettingsFrameCheckneverdie:SetPoint("TOPLEFT", LHCF_SettingsFrameCheckwilhelm, "TOPRIGHT", 70, 0)
+	LHCF_SettingsFrameChecktranq:SetPoint("TOPLEFT", LHCF_SettingsFrameCheckneverdie, "TOPRIGHT", 70, 0)
 end
 
 function LHCF_SetOptions()
@@ -557,7 +585,9 @@ function BH_OnEvent(self, event, ...)
 	end
 
 	if event == "UNIT_SPELLCAST_CHANNEL_START" then
-		if select(5, ...) == 740 then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\tranq.mp3", "master") end
+		if select(5, ...) == 740 then
+			if LHCFSettingsDB.LHCFSpecialEffects.tranq[2] then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\tranq.mp3", "master"); end
+		end
 	end
 
 	if (event == "MERCHANT_SHOW") then
@@ -570,7 +600,12 @@ function BH_OnEvent(self, event, ...)
 	if (event == "PLAYER_DEAD") then
 		iswilhelm = random(1, 100);
 		if (iswilhelm <= 10) then
-		   if LHCFSettingsDB.LHCFSpecialEffects.wilhelm[2] then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\wilhelm.mp3", "master"); end
+			whichdead = random(1, 100)
+			if LHCFSettingsDB.LHCFSpecialEffects.wilhelm[2] then
+				if whichdead <= 50 then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\wilhelm.mp3", "master");
+				else PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\dsdied.mp3", "master");
+				end
+			end
 		end
 	end
 
@@ -622,6 +657,7 @@ function lhhelp_command()
 	LHCF_HelpFrame_Text:SetText(LHCFLocalization["LHCF_HELP_TEXT"])
 	LHCF_HelpFrame_Text:SetFont("Interface\\AddOns\\LeeroyHillCatsPower\\AbhayaLibre-Regular.ttf",15)
 	LHCF_HelpFrame_Text:SetJustifyH("LEFT")
+	LHCF_HelpFrame_Text:SetJustifyV("TOP")
 	LHCF_HelpFrame_Text:SetSize(400, 350)
 	LHCF_HelpFrame:Show()
 	CreateFrame("Button", "LHCF_HelpFrame_Button1", LHCF_HelpFrame, "UIPanelButtonTemplate")
@@ -630,6 +666,24 @@ function lhhelp_command()
 	LHCF_HelpFrame_Button1:SetText("OK")
 	LHCF_HelpFrame_Button1:SetScript("OnClick", function(self, button)
 		self:GetParent():Hide()
+	end
+	)
+	CreateFrame("Button", "LHCF_HelpFrame_Button2", LHCF_HelpFrame, "LHCFNextButtonTemplate")
+	LHCF_HelpFrame_Button2:SetPoint("BOTTOMRIGHT", -30, 30)
+	CreateFrame("Button", "LHCF_HelpFrame_Button3", LHCF_HelpFrame, "LHCFPrevButtonTemplate")
+	LHCF_HelpFrame_Button3:SetPoint("BOTTOMLEFT", 30, 30)
+	LHCF_HelpFrame_Button3:Disable()
+	LHCF_HelpFrame_Button2:Enable()
+	LHCF_HelpFrame_Button2:SetScript("OnClick", function(self, button)
+		LHCF_HelpFrame_Text:SetText(LHCFLocalization["LHCF_HELP_TEXT_PG2"])
+		LHCF_HelpFrame_Button2:Disable()
+		LHCF_HelpFrame_Button3:Enable()
+	end
+	)
+	LHCF_HelpFrame_Button3:SetScript("OnClick", function(self, button)
+		LHCF_HelpFrame_Text:SetText(LHCFLocalization["LHCF_HELP_TEXT"])
+		LHCF_HelpFrame_Button3:Disable()
+		LHCF_HelpFrame_Button2:Enable()
 	end
 	)
 end
