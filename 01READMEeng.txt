@@ -1,4 +1,4 @@
-1. INTRODUCTION
+ï»¿1. INTRODUCTION
 The Amazing OOW Sound Effect addon by Larenon / Leirren / Pio
 
 This addon is a modified version of a really old addon which was called LeeroyHillCatsPower (no longer available as the addon site where it was hosted no longer exists).
@@ -17,7 +17,7 @@ DISCLAIMER
 
 Of course as with any other good things, if you are using the sound effects excessively (also called: spamming), then after some time they might cease to be funny, become irritating and that might even result in someone - horribile dictu - uninstalling the addon. Therefore, please try to keep it under control! This is especially true during raids, where your focused attention is required during bosskils. Therefore please refrain from using the addon during boss kill attempts, and only fire up a sound effect or two if it's really needed for a good laugh's sake. :-)
 
-The authors of the addon (Larenon <Order of Watchers> / Ragnaros-EU, Leirren <Order of Watchers> / Ragnaros-EU és Pio <Order of Watchers> / Ragnaros-EU) assume no responsibility whatsoever for any unpleasantries resulting from the use of the addon including but not limited to: receiving fifty DKP minus for excessive spamming, being kicked out of a raid or your guild, etc). But they would very much like to hear your story if something like that happens to you. :-))
+The authors of the addon (Larenon <Order of Watchers> / Ragnaros-EU, Leirren <Order of Watchers> / Ragnaros-EU and Pio <Order of Watchers> / Ragnaros-EU) assume no responsibility whatsoever for any unpleasantries resulting from the use of the addon including but not limited to: receiving fifty DKP minus for excessive spamming, being kicked out of a raid or your guild, etc). But they would very much like to hear your story if something like that happens to you. :-))
 
 3. ADDON COMMANDS
 
