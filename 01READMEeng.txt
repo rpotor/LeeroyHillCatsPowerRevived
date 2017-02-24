@@ -1,4 +1,4 @@
-Ôªø1. INTRODUCTION
+1. INTRODUCTION
 The Amazing OOW Sound Effect addon by Larenon / Leirren / Pio
 
 This addon is a modified version of a really old addon which was called LeeroyHillCatsPower (no longer available as the addon site where it was hosted no longer exists).
@@ -17,7 +17,7 @@ DISCLAIMER
 
 Of course as with any other good things, if you are using the sound effects excessively (also called: spamming), then after some time they might cease to be funny, become irritating and that might even result in someone - horribile dictu - uninstalling the addon. Therefore, please try to keep it under control! This is especially true during raids, where your focused attention is required during bosskils. Therefore please refrain from using the addon during boss kill attempts, and only fire up a sound effect or two if it's really needed for a good laugh's sake. :-)
 
-The authors of the addon (Larenon <Order of Watchers> / Ragnaros-EU, Leirren <Order of Watchers> / Ragnaros-EU and Pio <Order of Watchers> / Ragnaros-EU) assume no responsibility whatsoever for any unpleasantries resulting from the use of the addon including but not limited to: receiving fifty DKP minus for excessive spamming, being kicked out of a raid or your guild, etc). But they would very much like to hear your story if something like that happens to you. :-))
+The authors of the addon (Larenon <Order of Watchers> / Ragnaros-EU, Leirren <Order of Watchers> / Ragnaros-EU √©s Pio <Order of Watchers> / Ragnaros-EU) assume no responsibility whatsoever for any unpleasantries resulting from the use of the addon including but not limited to: receiving fifty DKP minus for excessive spamming, being kicked out of a raid or your guild, etc). But they would very much like to hear your story if something like that happens to you. :-))
 
 3. ADDON COMMANDS
 
@@ -32,40 +32,40 @@ It might be good to know where the effects are coming from (some of the links mi
 
 Dives "The Onyxia wipe guy" effects - http://www.youtube.com/watch?v=HtvIYRrgZ04
 <PALS FOR LIFE> guild - "Leeroy Jenkins!" effect - http://www.youtube.com/watch?v=LkCNJRfSZBU
-(* HUN) Gyalog Galopp - "Vissz¸k a hull·kat" effect - http://www.youtube.com/watch?v=OXVpQ3MN_Qw
-(* HUN) PonyvaregÈny - "Puska kellett volna bazdmeg" effect - http://www.youtube.com/watch?v=NMzZGGKOQYI
-(* HUN) G·bor a hegyrıl - "NEM!" effect - http://www.youtube.com/watch?v=HFgshSqD0lE
+(* HUN) Gyalog Galopp - "Vissz√ºk a hull√°kat" effect - http://www.youtube.com/watch?v=OXVpQ3MN_Qw
+(* HUN) Ponyvareg√©ny - "Puska kellett volna bazdmeg" effect - http://www.youtube.com/watch?v=NMzZGGKOQYI
+(* HUN) G√°bor a hegyr≈ël - "NEM!" effect - http://www.youtube.com/watch?v=HFgshSqD0lE
 Ranuan Kummit - "UFOPORNOOO!" effect - http://www.youtube.com/watch?v=e4QYkrp44us
-(* HUN) NacsaFon: Az Ifj˙ Skywalker Lajos kalandjai - "Vissza menjÈl, baszki!" effect - http://www.youtube.com/watch?v=-pVrOUyuiTA
+(* HUN) NacsaFon: Az Ifj√∫ Skywalker Lajos kalandjai - "Vissza menj√©l, baszki!" effect - http://www.youtube.com/watch?v=-pVrOUyuiTA
 Badget, mushroom effect - http://www.youtube.com/watch?v=2C8TdLx3-xs
 
 Wow freakout effect (Fck blizzard!) - http://www.youtube.com/watch?v=1Q4Ut761FQE
 Silence, i kill you! - http://www.youtube.com/watch?v=1uwOL4rB-go
-(* HUN) Jˆn a rÈzfasz˙ bagoly - http://www.youtube.com/watch?v=YA49Fzes0Ek
+(* HUN) J√∂n a r√©zfasz√∫ bagoly - http://www.youtube.com/watch?v=YA49Fzes0Ek
 OMG they killed Kenny - http://www.youtube.com/watch?v=GHhx_-r6Kmg
 Keyboard cat - http://www.youtube.com/watch?v=sXCzwpeBJGs
-(* HUN) RÈm·lomfˆld (SegÌtsÈg, lehugyozz a fa!) - http://www.youtube.com/watch?v=cTq9YSGOEyI
+(* HUN) R√©m√°lomf√∂ld (Seg√≠ts√©g, lehugyozz a fa!) - http://www.youtube.com/watch?v=cTq9YSGOEyI
 LVL70ETC -I'm murloc (Murloc) - http://www.youtube.com/watch?v=1TueJSFKsKw
 (* HUN) Red Fang - Prehistoric Dog (Hey Gandalf... nice dress!) - http://www.youtube.com/watch?v=fuRKRFjm-HA
-(* HUN) SusogÛs mackÛk - ˆlj - http://www.youtube.com/watch?v=peCtsSbcig0
-(* HUN) Simpsons csal·d (PÛkmalac) - http://www.youtube.com/watch?v=yzCEcJRH4Jo
+(* HUN) Susog√≥s mack√≥k - √∂lj - http://www.youtube.com/watch?v=peCtsSbcig0
+(* HUN) Simpsons csal√°d (P√≥kmalac) - http://www.youtube.com/watch?v=yzCEcJRH4Jo
 You are not prepared! - http://www.youtube.com/watch?v=_p73PZIDQuA
 Raving Rabbids - http://www.youtube.com/watch?v=BHiJK1KJHac
 Rick Astley Never gonna give you up - http://www.youtube.com/watch?v=dQw4w9WgXcQ&amp;ob=av2e
 LVL70ETC - Rouges do it from behind - http://www.youtube.com/watch?v=kdEYVy6BF0w
 Swedish Epic Meal Time - http://www.youtube.com/watch?v=C8Wu3Bps9ic
-(* HUN) Szıke cig·ny - http://www.youtube.com/watch?v=TsF4BKDsLxw
-TV series24 effect (Tick-Tack Mr. Bauer) - http://www.youtube.com/watch?v=a17b8eAGfXI (0:35-tıl)
+(* HUN) Sz≈ëke cig√°ny - http://www.youtube.com/watch?v=TsF4BKDsLxw
+TV series24 effect (Tick-Tack Mr. Bauer) - http://www.youtube.com/watch?v=a17b8eAGfXI (0:35-t≈ël)
 Trolling Saruman - http://www.youtube.com/watch?v=KaqC5FnvAEc --> original - http://www.youtube.com/watch?v=2Z4m4lnjxkY
-(* HUN) Most megvagy, a kurva any·d effekt - http://www.youtube.com/watch?v=fJy_B6ETkF0
+(* HUN) Most megvagy, a kurva any√°d effekt - http://www.youtube.com/watch?v=fJy_B6ETkF0
 I'm Commander Shepard and this is my favorite store on the Citadel - http://www.youtube.com/watch?v=oDCCKWuW-yc
 Wilhelm Scream - http://www.youtube.com/watch?v=cdbYsoEasio
-(* HUN) IndÌtjuk az Ûr·t, emelj¸k a b˙r·t effekt - http://www.youtube.com/watch?v=7E5Z2W1iu7M#t=2m22s
+(* HUN) Ind√≠tjuk az √≥r√°t, emelj√ºk a b√∫r√°t effekt - http://www.youtube.com/watch?v=7E5Z2W1iu7M#t=2m22s
 "HEROES NEVER DIE!", Overwatch, Mercy effekt - https://www.youtube.com/watch?v=YOWfmpCBYmo
 Batman - https://www.youtube.com/watch?v=EtoMN_xi-AM
 Arnold Chopper - https://www.youtube.com/watch?v=-9-Te-DPbSE
 Arnold Cookie - https://www.youtube.com/watch?v=dMLaKR9eoRA
-(* HUN) Fekete lovag dˆntetlen - https://www.youtube.com/watch?v=DiKFV9Ka-GU
+(* HUN) Fekete lovag d√∂ntetlen - https://www.youtube.com/watch?v=DiKFV9Ka-GU
 The Wonders of Suramar - https://www.youtube.com/watch?v=wWb0_WW15is
 Vingardium leviosa - https://www.youtube.com/watch?v=FWtO0cfgewY
 Epic NPC Man - Nice Day for Fishin' - https://www.youtube.com/watch?v=Vyw6n1EKlww
@@ -84,7 +84,7 @@ Noooo, God King Skovald effect - https://www.youtube.com/watch?v=WmP0hj9ZjDg
 I am the one who knocks - https://www.youtube.com/watch?v=3HH9IiHMD2M
 Say my name - https://www.youtube.com/watch?v=lUjEdsWtUsg
 Curb Your Enthusiasm theme - https://www.youtube.com/watch?v=Ag1o3koTLWM
-(* HUN) H·t, ez van - Janu·r, a GÛlya effekt - http://tenyek.hu/Belfold/227887_elpusztult-januar-a-golya.html
+(* HUN) H√°t, ez van - Janu√°r, a G√≥lya effekt - http://tenyek.hu/Belfold/227887_elpusztult-januar-a-golya.html
 Yeah, Science! - https://www.youtube.com/watch?v=eQR1r1KTjaE
 Dark Souls death - https://www.youtube.com/watch?v=CpaT28qMfis
 Zenyatta ultimate - https://www.youtube.com/watch?v=q_WYOaAKbOg
@@ -145,7 +145,7 @@ v4.4 - 07 December 2011
 - The addon now has the /inditjuk sound effect
 
 v4.3 - 29 October 2011
-- Small bug fix. The H·tszÈl effect should now work again.
+- Small bug fix. The H√°tsz√©l effect should now work again.
 - The emotes of the new effects that got into the addon in the previous version are comforming better to the English spelling and grammar rules now :-)
 - Some effects somehow disappeared from the addon due to the big changes in the previous version. These (handle, hithard, hitit, runto) are now usable again.
 - The addon now has the /megvagy sound effect
@@ -167,7 +167,7 @@ v3.21 - 09 December 2010
 
 v3.2 - 08 December 2010
 - The addon is no longer spamming the say channel, only a say bubble can be seen, like it was working about 3 years ago. :-)
-- Now some of the emotes shown by the addon changes depending on the target selected when the sound effect is activated. This feature was originally requested by Sheviar, also about 3 years ago :-) when the addon received the "Vissza menjÈl! Baszki!" effect. Sound effects affected by this change are: /handle, /hithard, /hitit, /morea, /moreb, /runto, /hshot, /vissza
+- Now some of the emotes shown by the addon changes depending on the target selected when the sound effect is activated. This feature was originally requested by Sheviar, also about 3 years ago :-) when the addon received the "Vissza menj√©l! Baszki!" effect. Sound effects affected by this change are: /handle, /hithard, /hitit, /morea, /moreb, /runto, /hshot, /vissza
 
 v3.1 - 07 December 2010
 - The addon is updated for patch 4.0.3a

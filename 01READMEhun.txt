@@ -1,70 +1,70 @@
-ï»¿1. INFORMÃCIÃ“
-Larenon / Leirren / Pio féle OoW hangeffekt addon.
+1. INFORMÃCIÃ“
+Larenon / Leirren / Pio fÃ©le OoW hangeffekt addon.
 
-Ez az addon a LeeroyHillCatsPower addon módosított változata. A jelenlegi verzió alapját képezõ addon innen tölthetõ le: http://ui.worldofwar.net/ui.php?id=1210 (sajnos jó eséllyel már nem mûködik, mert pár éve nem frissítették).
+Ez az addon a LeeroyHillCatsPower addon mÃ³dosÃ­tott vÃ¡ltozata. A jelenlegi verziÃ³ alapjÃ¡t kÃ©pezÅ‘ addon innen tÃ¶lthetÅ‘ le: http://ui.worldofwar.net/ui.php?id=1210 (sajnos jÃ³ esÃ©llyel mÃ¡r nem mÅ±kÃ¶dik, mert pÃ¡r Ã©ve nem frissÃ­tettÃ©k).
 
-Az addon segítségével elsõsorban a Wipe Club halhatatlan raid leaderének, Divesnak a raid vezetések során nélkülözhetetlen taktikai utasításait csalhatjuk elõ, de vannak más hangeffektek is, amelyekkel könnyedén feldobhatjuk egy-egy unalmas raid hangulatát. 
+Az addon segÃ­tsÃ©gÃ©vel elsÅ‘sorban a Wipe Club halhatatlan raid leaderÃ©nek, Divesnak a raid vezetÃ©sek sorÃ¡n nÃ©lkÃ¼lÃ¶zhetetlen taktikai utasÃ­tÃ¡sait csalhatjuk elÅ‘, de vannak mÃ¡s hangeffektek is, amelyekkel kÃ¶nnyedÃ©n feldobhatjuk egy-egy unalmas raid hangulatÃ¡t. 
 
-2. HASZNÁLAT
+2. HASZNÃLAT
 
-Legegyszerûbben úgy használhatjuk az addont, hogy egy makrót készítünk, amelybe beírjuk a "/lhcf" parancsot (természetesen az idézõjelek nélkül). Ezt a makrót tegyük ki valamelyik action barra. Ha megnyomjuk elõugrik egy kis ablak piros gombokkal, ahol tetszés szerint válogathatunk az effektek között. Az ablakot eltüntetni az "ESC" gomb megnyomásával, a szokásos, jobb felsõ sarokban levõ bezáró gombbal vagy a /lhcf parancs ismételt kiadásával lehet. Az ablak bal egérgomb nyomva tartása mellett bárhova mozgatható, ha nem tetszik, hogy elfoglalja a képernyõ közepét. :-) Kedvenc effektjeinket természetesen külön is kirakhatjuk makrókba és kitehetjük valamelyik action barra, hogy mindig kéznél legyenek. Ne sajnáljuk a helyet, nyugodtan dobjuk ki ritkábban használt képességeinket (pl.: taunt, regrowth, hunter's mark, frostbolt, stb.) az action barokról, hogy minél több hangeffekt makrója férjen el. Az igazi profik persze nem vacakolnak holmi grafikus ablakokkal, gombokkal, meg makrókkal, õk hardcore módon közvetlenül a parancssorba írják az effekteket elõidézõ parancsokat. 
+LegegyszerÅ±bben Ãºgy hasznÃ¡lhatjuk az addont, hogy egy makrÃ³t kÃ©szÃ­tÃ¼nk, amelybe beÃ­rjuk a "/lhcf" parancsot (termÃ©szetesen az idÃ©zÅ‘jelek nÃ©lkÃ¼l). Ezt a makrÃ³t tegyÃ¼k ki valamelyik action barra. Ha megnyomjuk elÅ‘ugrik egy kis ablak piros gombokkal, ahol tetszÃ©s szerint vÃ¡logathatunk az effektek kÃ¶zÃ¶tt. Az ablakot eltÃ¼ntetni az "ESC" gomb megnyomÃ¡sÃ¡val, a szokÃ¡sos, jobb felsÅ‘ sarokban levÅ‘ bezÃ¡rÃ³ gombbal vagy a /lhcf parancs ismÃ©telt kiadÃ¡sÃ¡val lehet. Az ablak bal egÃ©rgomb nyomva tartÃ¡sa mellett bÃ¡rhova mozgathatÃ³, ha nem tetszik, hogy elfoglalja a kÃ©pernyÅ‘ kÃ¶zepÃ©t. :-) Kedvenc effektjeinket termÃ©szetesen kÃ¼lÃ¶n is kirakhatjuk makrÃ³kba Ã©s kitehetjÃ¼k valamelyik action barra, hogy mindig kÃ©znÃ©l legyenek. Ne sajnÃ¡ljuk a helyet, nyugodtan dobjuk ki ritkÃ¡bban hasznÃ¡lt kÃ©pessÃ©geinket (pl.: taunt, regrowth, hunter's mark, frostbolt, stb.) az action barokrÃ³l, hogy minÃ©l tÃ¶bb hangeffekt makrÃ³ja fÃ©rjen el. Az igazi profik persze nem vacakolnak holmi grafikus ablakokkal, gombokkal, meg makrÃ³kkal, Å‘k hardcore mÃ³don kÃ¶zvetlenÃ¼l a parancssorba Ã­rjÃ¡k az effekteket elÅ‘idÃ©zÅ‘ parancsokat. 
 
-Az addonnal elõidézett hangeffekteket mindenki hallani fogja aki a közelünkben van és fel van telepítve neki ugyanez az addon. 
+Az addonnal elÅ‘idÃ©zett hangeffekteket mindenki hallani fogja aki a kÃ¶zelÃ¼nkben van Ã©s fel van telepÃ­tve neki ugyanez az addon. 
 
 FIGYELEM!!!
 
-Mint bármi más dolgot, ha a hangeffekteket túlzásba visszük (úgymond spammeljük) akkor egy idõ után már nem viccesek, sõt idegesítõvé is válhatnak, extrém esetben akár arra is késztethetnek egyeseket, hogy az addont - horribile dictu - uninstallálják. Ezért mindig próbáljuk meg eltalálni, hogy hol a határ. Különösen igaz ez raidkörnyezetben, ahol a bosskilleken fokozott figyelem az elvárás a raidtagoktól. Bossölések közben ezért lehetõleg kerüljük az addon használatát, csak különösen indokolt esetben durrantsunk el egy-egy effektet.
+Mint bÃ¡rmi mÃ¡s dolgot, ha a hangeffekteket tÃºlzÃ¡sba visszÃ¼k (Ãºgymond spammeljÃ¼k) akkor egy idÅ‘ utÃ¡n mÃ¡r nem viccesek, sÅ‘t idegesÃ­tÅ‘vÃ© is vÃ¡lhatnak, extrÃ©m esetben akÃ¡r arra is kÃ©sztethetnek egyeseket, hogy az addont - horribile dictu - uninstallÃ¡ljÃ¡k. EzÃ©rt mindig prÃ³bÃ¡ljuk meg eltalÃ¡lni, hogy hol a hatÃ¡r. KÃ¼lÃ¶nÃ¶sen igaz ez raidkÃ¶rnyezetben, ahol a bosskilleken fokozott figyelem az elvÃ¡rÃ¡s a raidtagoktÃ³l. BossÃ¶lÃ©sek kÃ¶zben ezÃ©rt lehetÅ‘leg kerÃ¼ljÃ¼k az addon hasznÃ¡latÃ¡t, csak kÃ¼lÃ¶nÃ¶sen indokolt esetben durrantsunk el egy-egy effektet.
 
 DISCLAIMER
 
-Az addon írói (Larenon <Order of Watchers> / Ragnaros-EU, Leirren <Order of Watchers> / Ragnaros-EU és Pio <Order of Watchers> / Ragnaros-EU) nem vállalnak felelõsséget az addon használatából eredõ bármilyen kellemetlenségért (pl. spammelésért kapott mínusz DKP, raidbõl való eltávolítás, guildbõl való kirúgás, túl sok emote spammeléséért járó ban, stb.)
+Az addon Ã­rÃ³i (Larenon <Order of Watchers> / Ragnaros-EU, Leirren <Order of Watchers> / Ragnaros-EU Ã©s Pio <Order of Watchers> / Ragnaros-EU) nem vÃ¡llalnak felelÅ‘ssÃ©get az addon hasznÃ¡latÃ¡bÃ³l eredÅ‘ bÃ¡rmilyen kellemetlensÃ©gÃ©rt (pl. spammelÃ©sÃ©rt kapott mÃ­nusz DKP, raidbÅ‘l valÃ³ eltÃ¡volÃ­tÃ¡s, guildbÅ‘l valÃ³ kirÃºgÃ¡s, tÃºl sok emote spammelÃ©sÃ©Ã©rt jÃ¡rÃ³ ban, stb.)
 
 3. PARANCSOK
 
-/lhcf help		- lista a használható parancsokról
-/lhcf			- a grafikus ablak megjelenítése / eltûntetése
-/lhcf <szín>		- színes ablak megjelenítése. <szín> lehet: fekete, kek, rozsaszin, piros, zold, sarga, feher
-/lhcf <effekt>		- <effekt> lejátszása
+/lhcf help		- lista a hasznÃ¡lhatÃ³ parancsokrÃ³l
+/lhcf			- a grafikus ablak megjelenÃ­tÃ©se / eltÅ±ntetÃ©se
+/lhcf <szÃ­n>		- szÃ­nes ablak megjelenÃ­tÃ©se. <szÃ­n> lehet: fekete, kek, rozsaszin, piros, zold, sarga, feher
+/lhcf <effekt>		- <effekt> lejÃ¡tszÃ¡sa
 
 
-4. Az effektek nyilván akkor viccesebbek, ha tudjuk honnan valók:
+4. Az effektek nyilvÃ¡n akkor viccesebbek, ha tudjuk honnan valÃ³k:
 
 Dives "The Onyxia wipe guy" effektek - http://www.youtube.com/watch?v=HtvIYRrgZ04
 <PALS FOR LIFE> guild - "Leeroy Jenkins!" effekt - http://www.youtube.com/watch?v=LkCNJRfSZBU
-Gyalog Galopp - "Visszük a hullákat" effekt - http://www.youtube.com/watch?v=OXVpQ3MN_Qw
-Ponyvaregény - "Puska kellett volna bazdmeg" effekt - http://www.youtube.com/watch?v=NMzZGGKOQYI
-Gábor a hegyrõl - "NEM!" effekt - http://www.youtube.com/watch?v=HFgshSqD0lE
+Gyalog Galopp - "VisszÃ¼k a hullÃ¡kat" effekt - http://www.youtube.com/watch?v=OXVpQ3MN_Qw
+PonyvaregÃ©ny - "Puska kellett volna bazdmeg" effekt - http://www.youtube.com/watch?v=NMzZGGKOQYI
+GÃ¡bor a hegyrÅ‘l - "NEM!" effekt - http://www.youtube.com/watch?v=HFgshSqD0lE
 Ranuan Kummit - "UFOPORNOOO!" effekt - http://www.youtube.com/watch?v=e4QYkrp44us
-NacsaFon: Az Ifjú Skywalker Lajos kalandjai - "Vissza menjél, baszki!" effekt - http://www.youtube.com/watch?v=-pVrOUyuiTA
+NacsaFon: Az IfjÃº Skywalker Lajos kalandjai - "Vissza menjÃ©l, baszki!" effekt - http://www.youtube.com/watch?v=-pVrOUyuiTA
 Badget, mushroom effekt - http://www.youtube.com/watch?v=2C8TdLx3-xs
 Wow freakout effekt (Fck blizzard!) - http://www.youtube.com/watch?v=1Q4Ut761FQE
 Silence, i kill you! - http://www.youtube.com/watch?v=1uwOL4rB-go
-Jön a rézfaszú bagoly - http://www.youtube.com/watch?v=YA49Fzes0Ek
+JÃ¶n a rÃ©zfaszÃº bagoly - http://www.youtube.com/watch?v=YA49Fzes0Ek
 OMG they killed Kenny - http://www.youtube.com/watch?v=GHhx_-r6Kmg
 Keyboard cat - http://www.youtube.com/watch?v=sXCzwpeBJGs
-Rémálomföld (Segítség, lehugyozz a fa!) - http://www.youtube.com/watch?v=cTq9YSGOEyI
+RÃ©mÃ¡lomfÃ¶ld (SegÃ­tsÃ©g, lehugyozz a fa!) - http://www.youtube.com/watch?v=cTq9YSGOEyI
 LVL70ETC -I'm murloc (Murloc) - http://www.youtube.com/watch?v=1TueJSFKsKw
 Red Fang - Prehistoric Dog (Hey Gandalf... nice dress!) - http://www.youtube.com/watch?v=fuRKRFjm-HA
-Susogós mackók - ölj - http://www.youtube.com/watch?v=peCtsSbcig0
-Simpsons család (Pókmalac) - http://www.youtube.com/watch?v=yzCEcJRH4Jo
+SusogÃ³s mackÃ³k - Ã¶lj - http://www.youtube.com/watch?v=peCtsSbcig0
+Simpsons csalÃ¡d (PÃ³kmalac) - http://www.youtube.com/watch?v=yzCEcJRH4Jo
 You are not prepared! - http://www.youtube.com/watch?v=_p73PZIDQuA
 Raving Rabbids - http://www.youtube.com/watch?v=BHiJK1KJHac
 Rick Astley Never gonna give you up - http://www.youtube.com/watch?v=dQw4w9WgXcQ&ob=av2e
 LVL70ETC - Rouges do it from behind - http://www.youtube.com/watch?v=kdEYVy6BF0w
 Swedish Epic Meal Time - http://www.youtube.com/watch?v=C8Wu3Bps9ic
-Szõke cigány - http://www.youtube.com/watch?v=TsF4BKDsLxw
-24 sorozat (Tick-Tack Mr. Bauer) - http://www.youtube.com/watch?v=a17b8eAGfXI (0:35-tõl) 
+SzÅ‘ke cigÃ¡ny - http://www.youtube.com/watch?v=TsF4BKDsLxw
+24 sorozat (Tick-Tack Mr. Bauer) - http://www.youtube.com/watch?v=a17b8eAGfXI (0:35-tÅ‘l) 
 Trolling Saruman - http://www.youtube.com/watch?v=KaqC5FnvAEc --> eredeti - http://www.youtube.com/watch?v=2Z4m4lnjxkY
-Most megvagy, a kurva anyád effekt - http://www.youtube.com/watch?v=fJy_B6ETkF0
+Most megvagy, a kurva anyÃ¡d effekt - http://www.youtube.com/watch?v=fJy_B6ETkF0
 I'm Commander Shepard and this is my favorite store on the Citadel - http://www.youtube.com/watch?v=oDCCKWuW-yc
 Wilhelm Scream - http://www.youtube.com/watch?v=cdbYsoEasio
-Indítjuk az órát, emeljük a búrát effekt - http://www.youtube.com/watch?v=7E5Z2W1iu7M#t=2m22s
+IndÃ­tjuk az Ã³rÃ¡t, emeljÃ¼k a bÃºrÃ¡t effekt - http://www.youtube.com/watch?v=7E5Z2W1iu7M#t=2m22s
 "HEROES NEVER DIE!", Overwatch, Mercy effekt - https://www.youtube.com/watch?v=YOWfmpCBYmo
 Batman - https://www.youtube.com/watch?v=EtoMN_xi-AM
 Arnold Chopper - https://www.youtube.com/watch?v=-9-Te-DPbSE
 Arnold Cookie - https://www.youtube.com/watch?v=dMLaKR9eoRA
-Fekete lovag döntetlen - https://www.youtube.com/watch?v=DiKFV9Ka-GU
-Suramar csodái - https://www.youtube.com/watch?v=wWb0_WW15is
+Fekete lovag dÃ¶ntetlen - https://www.youtube.com/watch?v=DiKFV9Ka-GU
+Suramar csodÃ¡i - https://www.youtube.com/watch?v=wWb0_WW15is
 Vingardium leviosa - https://www.youtube.com/watch?v=FWtO0cfgewY
 Epic NPC Man - Nice Day for Fishin' - https://www.youtube.com/watch?v=Vyw6n1EKlww
 Piros gomb - https://www.youtube.com/watch?v=L4o7sPDhr-8
@@ -72,7 +72,7 @@ You Spin Me Right 'Round - https://www.youtube.com/watch?v=PGNiXGX2nLU
 The Old Fashioned Way Quest - https://www.youtube.com/watch?v=E5oa4X7GB2g
 Stardust Crusaders Kono Dio Da - https://www.youtube.com/watch?v=HaGkk60kcjQ
 Stardust Crusaders Road Roller Da - https://www.youtube.com/watch?v=kIaqZh_gGz4
-Ben Brode röhögés - https://www.youtube.com/watch?v=7Dd23MlMmFY
+Ben Brode rÃ¶hÃ¶gÃ©s - https://www.youtube.com/watch?v=7Dd23MlMmFY
 Falcon Punch - https://www.youtube.com/watch?v=NN-gvLxF8vg
 Helya Touchy - https://www.youtube.com/watch?v=-l6_OYGGZpo
 Dragon Ball Z effect: Over 9000 - https://www.youtube.com/watch?v=M7ZDgmYAlZ4
@@ -82,135 +82,135 @@ Fussatok bolondok - https://www.youtube.com/watch?v=gkjlwPmrnHc
 I am the one who knocks - https://www.youtube.com/watch?v=3HH9IiHMD2M
 Say my name - https://www.youtube.com/watch?v=lUjEdsWtUsg
 Curb Your Enthusiasm theme - https://www.youtube.com/watch?v=Ag1o3koTLWM
-Hát, ez van - Január, a Gólya effekt - http://tenyek.hu/Belfold/227887_elpusztult-januar-a-golya.html
+HÃ¡t, ez van - JanuÃ¡r, a GÃ³lya effekt - http://tenyek.hu/Belfold/227887_elpusztult-januar-a-golya.html
 Yeah, Science! - https://www.youtube.com/watch?v=eQR1r1KTjaE
-Dark Souls halál - https://www.youtube.com/watch?v=CpaT28qMfis
+Dark Souls halÃ¡l - https://www.youtube.com/watch?v=CpaT28qMfis
 Zenyatta ultimate - https://www.youtube.com/watch?v=q_WYOaAKbOg
 
 VERSION HISTORY
 
 v5.4 - 2017. 02. 24.
-- Bekerültek az addonba a batman, chopper, cookie, dontetlen, illusion, leviosa, niceday, notright, nyugodjanak és rightround hangeffektek
-- Bekerült az addonba a squish hangeffekt (feature requested by Attreus)
-- Bekerültek az addonba a konodio és a roadroll hangeffektek (feature requested by Alona)
-- Bekerültek az addonba a brodelol, falcon, touchy, over9000, doomed, skovald és fussatok hangeffektek (mindegyik Hirxia kérésére)
-- Bekerültek az addonba a knock és a heisenberg hangeffektek (mindkettõ Sowy kérésére)
-- Bekerültek az addonba a curb, ezvan, lotr és science hangeffektek (mindegyik Pio kérésére)
-- Mostantól idõnként, amikor a karaktered meghal, a Wilhelm Scream helyett a Dark Souls játékban történõ elhalálozás hangeffektjével távozik az élõk sorából. (feature requested by Hirx)
-- Mostantól ha a közeledben valaki a Tranquility képességet használja, az Overwatch univerzumból áthallatszik, ahogy Zenyatta azt mondja: Experience Tranquility! (Feature requested by Hirx)
-- A régi effektek közül néhány mostantól hangosabban szólal meg (boldog, elkurtuk, idiota, ikillyou, jonarez, kenny, nicedress, olj, pokmalac, puska, rabbids, rickastley, ticktack)
+- BekerÃ¼ltek az addonba a batman, chopper, cookie, dontetlen, illusion, leviosa, niceday, notright, nyugodjanak Ã©s rightround hangeffektek
+- BekerÃ¼lt az addonba a squish hangeffekt (feature requested by Attreus)
+- BekerÃ¼ltek az addonba a konodio Ã©s a roadroll hangeffektek (feature requested by Alona)
+- BekerÃ¼ltek az addonba a brodelol, falcon, touchy, over9000, doomed, skovald Ã©s fussatok hangeffektek (mindegyik Hirxia kÃ©rÃ©sÃ©re)
+- BekerÃ¼ltek az addonba a knock Ã©s a heisenberg hangeffektek (mindkettÅ‘ Sowy kÃ©rÃ©sÃ©re)
+- BekerÃ¼ltek az addonba a curb, ezvan, lotr Ã©s science hangeffektek (mindegyik Pio kÃ©rÃ©sÃ©re)
+- MostantÃ³l idÅ‘nkÃ©nt, amikor a karaktered meghal, a Wilhelm Scream helyett a Dark Souls jÃ¡tÃ©kban tÃ¶rtÃ©nÅ‘ elhalÃ¡lozÃ¡s hangeffektjÃ©vel tÃ¡vozik az Ã©lÅ‘k sorÃ¡bÃ³l. (feature requested by Hirx)
+- MostantÃ³l ha a kÃ¶zeledben valaki a Tranquility kÃ©pessÃ©get hasznÃ¡lja, az Overwatch univerzumbÃ³l Ã¡thallatszik, ahogy Zenyatta azt mondja: Experience Tranquility! (Feature requested by Hirx)
+- A rÃ©gi effektek kÃ¶zÃ¼l nÃ©hÃ¡ny mostantÃ³l hangosabban szÃ³lal meg (boldog, elkurtuk, idiota, ikillyou, jonarez, kenny, nicedress, olj, pokmalac, puska, rabbids, rickastley, ticktack)
 
 v5.3 - 2017. 02. 18.
-- Az addonnak mostantól van egy beállító ablaka is, amit a fõ ablak jobb felsõ sarkában levõ fogaskerék gombra kattintva csalhatunk elõ. Az addon nyelve és a fõ ablak háttérszíne állítható be itt, illetve vannak beállító gombok az addon különféle speciális effektjeihez is.
-- A hangeffekt gombok mostantól ABC sorrendbe rendezõdnek az egyes tabokon. (Feature requested by Pio)
-- Az addon forráskódja mostantól elérhetõ a githubon: https://github.com/rpotor/LeeroyHillCatsPowerRevived
+- Az addonnak mostantÃ³l van egy beÃ¡llÃ­tÃ³ ablaka is, amit a fÅ‘ ablak jobb felsÅ‘ sarkÃ¡ban levÅ‘ fogaskerÃ©k gombra kattintva csalhatunk elÅ‘. Az addon nyelve Ã©s a fÅ‘ ablak hÃ¡ttÃ©rszÃ­ne Ã¡llÃ­thatÃ³ be itt, illetve vannak beÃ¡llÃ­tÃ³ gombok az addon kÃ¼lÃ¶nfÃ©le speciÃ¡lis effektjeihez is.
+- A hangeffekt gombok mostantÃ³l ABC sorrendbe rendezÅ‘dnek az egyes tabokon. (Feature requested by Pio)
+- Az addon forrÃ¡skÃ³dja mostantÃ³l elÃ©rhetÅ‘ a githubon: https://github.com/rpotor/LeeroyHillCatsPowerRevived
 
 v5.2 - 2017. 02. 17.
-- Béta verzióból beállítva hivatalos release-nek, ha mégis vannak bugok, akkor azt légyszi jelezzétek az addon Curse weboldalán.
-- Az addon újdonságait lásd lent a v5.2b verziónál.
+- BÃ©ta verziÃ³bÃ³l beÃ¡llÃ­tva hivatalos release-nek, ha mÃ©gis vannak bugok, akkor azt lÃ©gyszi jelezzÃ©tek az addon Curse weboldalÃ¡n.
+- Az addon ÃºjdonsÃ¡gait lÃ¡sd lent a v5.2b verziÃ³nÃ¡l.
 
 v5.2b - 2017. 02. 16.
-- Mostantól a jelenlegi frissítést követõ elsõ indításnál meghatározhatod, hogy milyen nyelven beszéljen az addon.
-- Mostantól minden gombon lehet jobb egérgombbal kattintani és a lenyíló menüben kiválaszthatod, hogy utálod vagy imádod az adott effektet (esetleg mindkettõ, viszont akkor bocs, de elég fura gyerek lehetsz :-) Ha utálod, akkor a gomb szürkére vált és azt a hangeffektet soha többet nem fogod hallani többé (addig amíg egy újabb jobb egérgombot nyomva nem veszed le róla az utálatot). Ha imádod az effektet, akkor a gomb megjelenik a "fav" tabon is, ahol az összes kedvenc hangeffekted könnyen elérhetõ.
-- A help parancsnak újra csak egy verziója van, az, hogy /lhcf help. Használatakor felugrik egy kis ablak a súgó szöveggel, az addonhoz beállított nyelven megjelenítve.
-- Ez egy béta verzió, légyszi próbáld meg elrontani az addont és ha sikerül, akkor az esetleges hibaüzenetet küldd el egy bug reportban.
+- MostantÃ³l a jelenlegi frissÃ­tÃ©st kÃ¶vetÅ‘ elsÅ‘ indÃ­tÃ¡snÃ¡l meghatÃ¡rozhatod, hogy milyen nyelven beszÃ©ljen az addon.
+- MostantÃ³l minden gombon lehet jobb egÃ©rgombbal kattintani Ã©s a lenyÃ­lÃ³ menÃ¼ben kivÃ¡laszthatod, hogy utÃ¡lod vagy imÃ¡dod az adott effektet (esetleg mindkettÅ‘, viszont akkor bocs, de elÃ©g fura gyerek lehetsz :-) Ha utÃ¡lod, akkor a gomb szÃ¼rkÃ©re vÃ¡lt Ã©s azt a hangeffektet soha tÃ¶bbet nem fogod hallani tÃ¶bbÃ© (addig amÃ­g egy Ãºjabb jobb egÃ©rgombot nyomva nem veszed le rÃ³la az utÃ¡latot). Ha imÃ¡dod az effektet, akkor a gomb megjelenik a "fav" tabon is, ahol az Ã¶sszes kedvenc hangeffekted kÃ¶nnyen elÃ©rhetÅ‘.
+- A help parancsnak Ãºjra csak egy verziÃ³ja van, az, hogy /lhcf help. HasznÃ¡latakor felugrik egy kis ablak a sÃºgÃ³ szÃ¶veggel, az addonhoz beÃ¡llÃ­tott nyelven megjelenÃ­tve.
+- Ez egy bÃ©ta verziÃ³, lÃ©gyszi prÃ³bÃ¡ld meg elrontani az addont Ã©s ha sikerÃ¼l, akkor az esetleges hibaÃ¼zenetet kÃ¼ldd el egy bug reportban.
 
 v5.1 - 2017. 02. 05.
 - Az addon megjelenik a curse.com-on
-- Az /lhcf help parancsnak mostantól van egy /lhcf help eng verziója is, a nemzetközi felhasználók segítségére. :-)
+- Az /lhcf help parancsnak mostantÃ³l van egy /lhcf help eng verziÃ³ja is, a nemzetkÃ¶zi felhasznÃ¡lÃ³k segÃ­tsÃ©gÃ©re. :-)
 
 v5.0 - 2017. 02. 05.
-- Teljesen újraíródott az addon, optimalizálódott a kód, az eddigi kb. 2300 soros szuperdagadt addon a sokkal csajozósabb mennyiségû 472 sorra fogyott.
-- Az addont nem használó játékosok indokolatlan spammelésének csökkentése érdekében az addon most már kizárólag emote-okat használ, egyáltalán nem spammel a /say chatre. Emiatt a változás miatt a korábbi verziók teljesen inkompatibilisek ezzel az új verzióval, tehát minden felhasználónak nagyon ajánlott erre az új addonra frissítenie.
-- A Gyerob féle Androidos apphoz hasonló tabokat kapott az addon, az egyes effekteket pontosan az Android app kategóriáiba soroltam be az addonban is.
-- Mercy most már elvileg valóban áthallatszik idõnként az Overwatch univerzumból.
-- A fórumon leírtak szerint tervezzük az addon további effektekkel való bõvítését a közeljövõben.
-- Következõ nagyobb lélegzetû dolog annak megoldása lesz, hogy a felhasználók - lehetõleg egy grafikus felületen - ki tudják kapcsolni azokat az effekteket, amiket utálnak, hogy sose hallják õket többé.
+- Teljesen ÃºjraÃ­rÃ³dott az addon, optimalizÃ¡lÃ³dott a kÃ³d, az eddigi kb. 2300 soros szuperdagadt addon a sokkal csajozÃ³sabb mennyisÃ©gÅ± 472 sorra fogyott.
+- Az addont nem hasznÃ¡lÃ³ jÃ¡tÃ©kosok indokolatlan spammelÃ©sÃ©nek csÃ¶kkentÃ©se Ã©rdekÃ©ben az addon most mÃ¡r kizÃ¡rÃ³lag emote-okat hasznÃ¡l, egyÃ¡ltalÃ¡n nem spammel a /say chatre. Emiatt a vÃ¡ltozÃ¡s miatt a korÃ¡bbi verziÃ³k teljesen inkompatibilisek ezzel az Ãºj verziÃ³val, tehÃ¡t minden felhasznÃ¡lÃ³nak nagyon ajÃ¡nlott erre az Ãºj addonra frissÃ­tenie.
+- A Gyerob fÃ©le Androidos apphoz hasonlÃ³ tabokat kapott az addon, az egyes effekteket pontosan az Android app kategÃ³riÃ¡iba soroltam be az addonban is.
+- Mercy most mÃ¡r elvileg valÃ³ban Ã¡thallatszik idÅ‘nkÃ©nt az Overwatch univerzumbÃ³l.
+- A fÃ³rumon leÃ­rtak szerint tervezzÃ¼k az addon tovÃ¡bbi effektekkel valÃ³ bÅ‘vÃ­tÃ©sÃ©t a kÃ¶zeljÃ¶vÅ‘ben.
+- KÃ¶vetkezÅ‘ nagyobb lÃ©legzetÅ± dolog annak megoldÃ¡sa lesz, hogy a felhasznÃ¡lÃ³k - lehetÅ‘leg egy grafikus felÃ¼leten - ki tudjÃ¡k kapcsolni azokat az effekteket, amiket utÃ¡lnak, hogy sose halljÃ¡k Å‘ket tÃ¶bbÃ©.
 
 v4.7 - 2017. 01. 26.
-Mostantól idõnként (50% eséllyel), amikor a karakterünket egy másik játékos akarja feléleszteni, a tér-idõ kontinuum furcsa anomáliája miatt az Overwatch univerzumból áthallatszik, hogy "HEROES NEVER DIE!"
+MostantÃ³l idÅ‘nkÃ©nt (50% esÃ©llyel), amikor a karakterÃ¼nket egy mÃ¡sik jÃ¡tÃ©kos akarja felÃ©leszteni, a tÃ©r-idÅ‘ kontinuum furcsa anomÃ¡liÃ¡ja miatt az Overwatch univerzumbÃ³l Ã¡thallatszik, hogy "HEROES NEVER DIE!"
 
 v4.6 - 2016. 07. 24.
-- Verzió updatelve Legionre by Pio. Köszi!
+- VerziÃ³ updatelve Legionre by Pio. KÃ¶szi!
 
 v4.5 - 2012. 02. 08.
-- Az effektek most már mindig a játékra beállított maximális hangerõvel szólalnak meg, akkor is, ha az "Effects Sound Volume" beállítás lejjebb van húzva
-- A grafikus ablak szegélyt, keretet és egy szép bezáró gombot kapott
-- Mostantól használható a /lhcf <szín> parancs, amivel többféle színben jeleníthetjük meg az addont. <szín> lehet: fekete, kek, rozsaszin, piros, zold, sarga, feher
+- Az effektek most mÃ¡r mindig a jÃ¡tÃ©kra beÃ¡llÃ­tott maximÃ¡lis hangerÅ‘vel szÃ³lalnak meg, akkor is, ha az "Effects Sound Volume" beÃ¡llÃ­tÃ¡s lejjebb van hÃºzva
+- A grafikus ablak szegÃ©lyt, keretet Ã©s egy szÃ©p bezÃ¡rÃ³ gombot kapott
+- MostantÃ³l hasznÃ¡lhatÃ³ a /lhcf <szÃ­n> parancs, amivel tÃ¶bbfÃ©le szÃ­nben jelenÃ­thetjÃ¼k meg az addont. <szÃ­n> lehet: fekete, kek, rozsaszin, piros, zold, sarga, feher
 
 v4.4 - 2011. 12. 07.
-- verzió frissítve a 4.3 patch-hez.
-- Bekerült az addonba a /inditjuk effekt.
+- verziÃ³ frissÃ­tve a 4.3 patch-hez.
+- BekerÃ¼lt az addonba a /inditjuk effekt.
 
 v4.3 - 2011. 10. 29.
-- Apróbb bug-fix. Mostmár mûködnie kell a Hátszél effektnek is.
-- Az elõzõ verzióban bekerült új effektek emote-jai mostantól jobban megfelelnek az angol helyesírás és nyelvtan követelményeinek. :-)
-- Az elõzõ verzió nagy változásai miatt véletlenül néhány effekt valahogy eltûnt az addonból. Ezek (handle, hithard, hitit, runto) mostantól ismét használhatók.
-- Bekerült az addonba a /megvagy effekt.
-- Mostantól idõnként (10% eséllyel) amikor megnyitunk a világban egy vendort, Commander Shepard jelzi nekünk, hogy õ a kedvenc kereskedõje.
-- Mostantól idõnként (10% eséllyel) amikor a karakterünk meghal, a Wilhelm Scream hangeffekttel távozik az élõk sorából.
+- AprÃ³bb bug-fix. MostmÃ¡r mÅ±kÃ¶dnie kell a HÃ¡tszÃ©l effektnek is.
+- Az elÅ‘zÅ‘ verziÃ³ban bekerÃ¼lt Ãºj effektek emote-jai mostantÃ³l jobban megfelelnek az angol helyesÃ­rÃ¡s Ã©s nyelvtan kÃ¶vetelmÃ©nyeinek. :-)
+- Az elÅ‘zÅ‘ verziÃ³ nagy vÃ¡ltozÃ¡sai miatt vÃ©letlenÃ¼l nÃ©hÃ¡ny effekt valahogy eltÅ±nt az addonbÃ³l. Ezek (handle, hithard, hitit, runto) mostantÃ³l ismÃ©t hasznÃ¡lhatÃ³k.
+- BekerÃ¼lt az addonba a /megvagy effekt.
+- MostantÃ³l idÅ‘nkÃ©nt (10% esÃ©llyel) amikor megnyitunk a vilÃ¡gban egy vendort, Commander Shepard jelzi nekÃ¼nk, hogy Å‘ a kedvenc kereskedÅ‘je.
+- MostantÃ³l idÅ‘nkÃ©nt (10% esÃ©llyel) amikor a karakterÃ¼nk meghal, a Wilhelm Scream hangeffekttel tÃ¡vozik az Ã©lÅ‘k sorÃ¡bÃ³l.
 
 v4.2  -	2011. 07. 01.
-- Az addon megújult külsõket kapott (fekete, kék és rózsaszín színben pompázhat az addonod :) )
-- A csomagba bekerült a /badget, /boldog, /fckbliz, /hatszel, /idiota, /ikillyou, /jonarez, /kenny, /keycat, /korhaz, /lehugyoza, /murloc, /nicedress, /olj, /pokmalac, /prepared, /rabbids, /rickastley, /rouges, /swedishmeal, /szokecigany, /tick-tack, / trollololol
+- Az addon megÃºjult kÃ¼lsÅ‘ket kapott (fekete, kÃ©k Ã©s rÃ³zsaszÃ­n szÃ­nben pompÃ¡zhat az addonod :) )
+- A csomagba bekerÃ¼lt a /badget, /boldog, /fckbliz, /hatszel, /idiota, /ikillyou, /jonarez, /kenny, /keycat, /korhaz, /lehugyoza, /murloc, /nicedress, /olj, /pokmalac, /prepared, /rabbids, /rickastley, /rouges, /swedishmeal, /szokecigany, /tick-tack, / trollololol
 
 v3.22 - 2010. 12. 10.
-- Egyes effektekhez mellékeltem Youtube linkeket, hátha valaki nem vágja õket, bár meg kell jegyezni, hogy ezek a videók az általános alapmûveltséghez tartoznak, szóval ha valaki nem látta õket, gyorsan és azonnal pótolja ezt a hiányosságot. :-)
+- Egyes effektekhez mellÃ©keltem Youtube linkeket, hÃ¡tha valaki nem vÃ¡gja Å‘ket, bÃ¡r meg kell jegyezni, hogy ezek a videÃ³k az Ã¡ltalÃ¡nos alapmÅ±veltsÃ©ghez tartoznak, szÃ³val ha valaki nem lÃ¡tta Å‘ket, gyorsan Ã©s azonnal pÃ³tolja ezt a hiÃ¡nyossÃ¡got. :-)
 
 v3.21 - 2010. 12. 09.
-- readme.txt aktualizálva
-- megváltoz
--tak az addon parancsai. Mostmár csak a /lhcf parancs létezik, az egyes effekteket ehhez kell hozzáfûzni, például "/lhcf hshot"
-- a grafikus ablakban a gombok tooltipeket kaptak, hogy már a gomb megnyomása elõtt látható legyen mire számíthatunk :-)
+- readme.txt aktualizÃ¡lva
+- megvÃ¡ltoz
+-tak az addon parancsai. MostmÃ¡r csak a /lhcf parancs lÃ©tezik, az egyes effekteket ehhez kell hozzÃ¡fÅ±zni, pÃ©ldÃ¡ul "/lhcf hshot"
+- a grafikus ablakban a gombok tooltipeket kaptak, hogy mÃ¡r a gomb megnyomÃ¡sa elÅ‘tt lÃ¡thatÃ³ legyen mire szÃ¡mÃ­thatunk :-)
 
 v3.2 - 2010. 12. 08.
-- Az addon mostantól már nem spammeli az effekteket say-ben is, csak say-buborékban, úgy, ahogy eredetileg is mûködött mintegy 3 évvel ezelõtt. :-)
-- Mostantól egyes hangeffektek kiírt emote-ja változik attól függõen, hogy van-e célpont kijelölve az effekt aktiválásának pillanatában. Ezt a feature-t eredetileg Sheviar javasolta szintén mintegy 3 évvel ezelõtt :-) amikor bekerült az addonba a "Vissza menjél! Baszki!" effekt. A változással érintett hangeffekt parancsok: /handle, /hithard, /hitit, /morea, /moreb, /runto, /hshot, /vissza
+- Az addon mostantÃ³l mÃ¡r nem spammeli az effekteket say-ben is, csak say-buborÃ©kban, Ãºgy, ahogy eredetileg is mÅ±kÃ¶dÃ¶tt mintegy 3 Ã©vvel ezelÅ‘tt. :-)
+- MostantÃ³l egyes hangeffektek kiÃ­rt emote-ja vÃ¡ltozik attÃ³l fÃ¼ggÅ‘en, hogy van-e cÃ©lpont kijelÃ¶lve az effekt aktivÃ¡lÃ¡sÃ¡nak pillanatÃ¡ban. Ezt a feature-t eredetileg Sheviar javasolta szintÃ©n mintegy 3 Ã©vvel ezelÅ‘tt :-) amikor bekerÃ¼lt az addonba a "Vissza menjÃ©l! Baszki!" effekt. A vÃ¡ltozÃ¡ssal Ã©rintett hangeffekt parancsok: /handle, /hithard, /hitit, /morea, /moreb, /runto, /hshot, /vissza
 
 v3.1 - 2010. 12. 07.
-- 4.0.3a patch-hez igazítva.
-- A /lhcf parancs hatására elõjövõ ablak mostantól mozgatható és az "ESC" billentyû lenyomására eltûntethetõ.
+- 4.0.3a patch-hez igazÃ­tva.
+- A /lhcf parancs hatÃ¡sÃ¡ra elÅ‘jÃ¶vÅ‘ ablak mostantÃ³l mozgathatÃ³ Ã©s az "ESC" billentyÅ± lenyomÃ¡sÃ¡ra eltÅ±ntethetÅ‘.
 
 v3.0 - 2008. 10. 19.
-- 3.0.2 patch-hez igazítva.
+- 3.0.2 patch-hez igazÃ­tva.
 
 v2.9 - 2008. 02. 24.
-- Bekerül az addonba a /gomba és a /persze parancs
+- BekerÃ¼l az addonba a /gomba Ã©s a /persze parancs
 
 v2.8 - 2007. 10. 23.
-- Bekerül az addonba a /vissza parancs.
+- BekerÃ¼l az addonba a /vissza parancs.
 
 v2.7 - 2007. 09. 07.
-- Bekerül az addonba a /ufo parancs.
-- Bõvült a readme.txt
+- BekerÃ¼l az addonba a /ufo parancs.
+- BÅ‘vÃ¼lt a readme.txt
 
 v2.6 - 2007. 05. 12.
-- Bekerül az addonba a /nem és a /mkay parancs.
-- Grafikus ablakot kap az addon. /lhcf paranccsal hívható elõ és tûntethetõ el, egyelõre még nem mozgatható.
+- BekerÃ¼l az addonba a /nem Ã©s a /mkay parancs.
+- Grafikus ablakot kap az addon. /lhcf paranccsal hÃ­vhatÃ³ elÅ‘ Ã©s tÅ±ntethetÅ‘ el, egyelÅ‘re mÃ©g nem mozgathatÃ³.
 
 v2.5 - 2006. 11. 03.
-- Bekerül az addonba a /elkurtuk parancs (feature requested by Haegr).
+- BekerÃ¼l az addonba a /elkurtuk parancs (feature requested by Haegr).
 
 v2.4 - 2006. 08. 18.
-- Bekerül az addonba a /sglike (feature requested by Soloriens) és a /hshit parancs.
+- BekerÃ¼l az addonba a /sglike (feature requested by Soloriens) Ã©s a /hshit parancs.
 
 v2.3 - 2006. 08. 17.
-- Bekerül az addonba a /matrix parancs. (Feature requested by Class Leader Bazo).
+- BekerÃ¼l az addonba a /matrix parancs. (Feature requested by Class Leader Bazo).
 
 v2.2 - 2006. 08. 16.
-- Bekerülnek az addonba a /glike, /kspree, /mkill, /rampage, /ultrakill, /unstoppable és /xkill parancsok az Unreal Tournament tiszteletére.
-- Bekerül az addonba a /badpull parancs. (Feature requested by Sylarin).
+- BekerÃ¼lnek az addonba a /glike, /kspree, /mkill, /rampage, /ultrakill, /unstoppable Ã©s /xkill parancsok az Unreal Tournament tiszteletÃ©re.
+- BekerÃ¼l az addonba a /badpull parancs. (Feature requested by Sylarin).
 
 v2.1 - 2006. 08. 12.
-- Bekerül az addonba a /puska parancs. (Feature requested by Class Leader Bazo).
+- BekerÃ¼l az addonba a /puska parancs. (Feature requested by Class Leader Bazo).
 
 v2.0 - 2006. 07. 17.
-- Bekerül az addonba a /hshot és a /flawless parancs.
-- Elkészül a readme.txt
+- BekerÃ¼l az addonba a /hshot Ã©s a /flawless parancs.
+- ElkÃ©szÃ¼l a readme.txt
 
 v1.1 - 2006. 05. 19.
-- Bekerül az addonba a /hullak parancs.
+- BekerÃ¼l az addonba a /hullak parancs.
 
 v1.0 - 2006. 05. 14.
-- Az eredeti LeeroyHillCatsPower addont (http://ui.worldofwar.net/ui.php?id=1210) alapul véve bekerülnek az addonba a Dives hangeffektek.
-- A módosított addon publikálásra kerül az Order of Watchers klánfórumán, illetve felkerül a klán ftp szerverére.
+- Az eredeti LeeroyHillCatsPower addont (http://ui.worldofwar.net/ui.php?id=1210) alapul vÃ©ve bekerÃ¼lnek az addonba a Dives hangeffektek.
+- A mÃ³dosÃ­tott addon publikÃ¡lÃ¡sra kerÃ¼l az Order of Watchers klÃ¡nfÃ³rumÃ¡n, illetve felkerÃ¼l a klÃ¡n ftp szerverÃ©re.
