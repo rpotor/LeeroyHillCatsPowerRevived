@@ -303,6 +303,7 @@ function LHCFButtonHandler(...)
 	else
 		local name = self:GetName()
 		DropDownToggledBy = self:GetText()
+		DropDownToggledID = self:GetID()
 		ToggleDropDownMenu(1, nil, LHCF_DropDown1, name, 0, 0)
 		LHCF_SetButtonVisibility(DropDownToggledBy, self:GetID())
 	end
@@ -342,7 +343,7 @@ function LHCF_InitializeDropDown(self, level)
 		info.checked = LHCFSettingsDB.utaljuk[DropDownToggledBy]
 		function info.func(button, arg1, arg2)
 			rawset(LHCFSettingsDB.utaljuk, DropDownToggledBy, not LHCFSettingsDB.utaljuk[DropDownToggledBy])
-			LHCF_SetButtonVisibility(DropDownToggledBy, LHCFIndex[DropDownToggledBy])
+			LHCF_SetButtonVisibility(DropDownToggledBy, DropDownToggledID)
 			LHCFTabButtonHandler(PanelTemplates_GetSelectedTab(BH_Core))
 		end
 		UIDropDownMenu_AddButton(info)
@@ -364,7 +365,8 @@ function LHCF_InitializeDropDown(self, level)
 			elseif LHCFSettingsDB.imadjuk[DropDownToggledBy] == true and BH_CoreTab1.isDisabled then
 				PanelTemplates_EnableTab(BH_Core, 1)
 			end
-			LHCF_SetButtonVisibility(DropDownToggledBy, LHCFIndex[DropDownToggledBy])
+			LHCF_SetButtonVisibility(DropDownToggledBy, DropDownToggledID)
+			LHCFTabButtonHandler(1)
 		end
 		UIDropDownMenu_AddButton(info)
 	end
