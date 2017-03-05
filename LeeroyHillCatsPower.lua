@@ -612,10 +612,10 @@ function BH_OnEvent(self, event, ...)
 	end
 
 	if (event == "RESURRECT_REQUEST") then
-		doheroesdie = random(1, 100);
-		if (doheroesdie <= 50) then
+--		doheroesdie = random(1, 100);
+--		if (doheroesdie <= 50) then
 			SendChatMessage("never dies!", "EMOTE");
-		end
+--		end
 	end
 	
 	if (event == "CHAT_MSG_EMOTE") then
@@ -633,7 +633,7 @@ function BH_OnEvent(self, event, ...)
 			
 			if megvan then
 				if (time() >= BH_TimeTilNext) then
-					if LHCFSettingsDB.utaljuk[v[2]] == false or #LHCFSettingsDB.utaljuk == 0 then
+					if LHCFSettingsDB.utaljuk[v[2]] == false or LHCFSettingsDB.utaljuk == nil then
 						if LHCFSettingsDB.LHCFSpecialEffects[v[2]] then
 							if LHCFSettingsDB.LHCFSpecialEffects[v[2]][2] ~= false then PlaySoundFile(v[5], "master") end
 						else PlaySoundFile(v[5], "master")
