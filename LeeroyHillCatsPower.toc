@@ -3,6 +3,6 @@
 ## Notes: /benny /leeroy /power /thundercats
 ## OptionalDeps:
 ## Dependencies:
-## Version: v5.4.2
+## Version: v5.4.3
 ## SavedVariables: LHCFSettingsDB
 LeeroyHillCatsPower.xml
