@@ -43,7 +43,7 @@ function LHCF_SetDefaults()
 		["imadjuk"] = {}
 	}
 
-	-- 1: button tooltip, 2: button text, 3: additional emote, 4: emote messages, 5: sound file, 6: command, 7: type, 8: oow spec?, 9: length in seconds
+	-- 1: button tooltip, 2: button text, 3: additional emote, 4: emote messages, 5: sound file, 6: command, 7: type (normal / targeted), 8: category (oow, wow, games, tv, music, misc), 9: length in seconds
 
 	LHCFMaster = {}
 	table.insert(LHCFMaster, {"Who the fuck was that?\n".."|cff007a00Dives effekt","badpull","",{"asks who the f*** was that?"},"Interface\\AddOns\\LeeroyHillCatsPower\\badpull.mp3","badpull","normal","wow",2})
@@ -131,6 +131,35 @@ function LHCF_SetDefaults()
 	table.insert(LHCFMaster, {"Curb Your Enthusiasm theme\n".."|cff007a00Curb Your Enthusiasm effekt","curb","",{"thinks everyone should curb their enthusiasm a little."},"Interface\\AddOns\\LeeroyHillCatsPower\\curb.mp3","curb","normal","tv",7})
 	table.insert(LHCFMaster, {"Yeah Mr. White! Yeah science!\n".."|cff007a00Breaking Bad effekt","science","",{"strongly believes in science."},"Interface\\AddOns\\LeeroyHillCatsPower\\science.mp3","science","normal","tv",3})
 	table.insert(LHCFMaster, {"Now, say my name!\n".."|cff007a00Breaking Bad effekt","heisenberg","",{"decides to break bad for a change."},"Interface\\AddOns\\LeeroyHillCatsPower\\heisenberg.mp3","heisenberg","normal","tv",7})
+	table.insert(LHCFMaster, {"20th Century Fox intro flute edition","flute","",{"plays a perfect tune on a flute."},"Interface\\AddOns\\LeeroyHillCatsPower\\flute.mp3","flute","normal","music",20})
+	table.insert(LHCFMaster, {"And his name is John Cena\n".."|cff007a00WWE effekt","cena","",{"introduces John Cena."},"Interface\\AddOns\\LeeroyHillCatsPower\\cena.mp3","cena","normal","misc",7})
+	table.insert(LHCFMaster, {"Batman scene transition effect","newscene","",{"thinks a new scene is about to start."},"Interface\\AddOns\\LeeroyHillCatsPower\\newscene.mp3","newscene","normal","tv",2})
+	table.insert(LHCFMaster, {"Jön a gólem!\n".."|cff007a00Belga effekt","golem","",{"warns everyone that a golem is incoming."},"Interface\\AddOns\\LeeroyHillCatsPower\\golem.mp3","golem","normal","music",5})
+	table.insert(LHCFMaster, {"Szerelmes vagyok!\n".."|cff007a00Belga effekt","love","",{"is madly in love.","is madly in love with |."},"Interface\\AddOns\\LeeroyHillCatsPower\\love.mp3","love","targeted","music",7})
+	table.insert(LHCFMaster, {"Boom Headshot!\n".."|cff007a00Pure Pwnage effekt","boomhs","",{"is shooting headshots all over the place."},"Interface\\AddOns\\LeeroyHillCatsPower\\boomhs.mp3","boomhs","normal","tv",11})
+	table.insert(LHCFMaster, {"Cricket sound effect","crickets","",{"hears crickets chirping all around."},"Interface\\AddOns\\LeeroyHillCatsPower\\crickets.mp3","crickets","normal","misc",10})
+	table.insert(LHCFMaster, {"Drum roll sound effect","drumroll","",{"rolls the drum."},"Interface\\AddOns\\LeeroyHillCatsPower\\drumroll.mp3","drumroll","normal","misc",4})
+	table.insert(LHCFMaster, {"Get over here!\n".."|cff007a00Mortal Kombat Skorpion effekt","gethere","",{"pulls an enemy closer with a grappling hook. Nasty!","pulls | closer with a grappling hook. Nasty!"},"Interface\\AddOns\\LeeroyHillCatsPower\\gethere.mp3","gethere","targeted","games",2})
+	table.insert(LHCFMaster, {"Heavenly music effect","heavenly","",{"listens to a heavenly music."},"Interface\\AddOns\\LeeroyHillCatsPower\\heavenly.mp3","heavenly","normal","misc",8})
+	table.insert(LHCFMaster, {"I am Beowulf\n".."|cff007a00Beowulf movie effekt","beowulf","",{"thinks Beowulf is really a badass."},"Interface\\AddOns\\LeeroyHillCatsPower\\beowulf.mp3","beowulf","normal","tv",15})
+	table.insert(LHCFMaster, {"Illuminati confirmed\n".."|cff007a00X-Files theme","illuminati","",{"thinks Illuminati is now definitely confirmed."},"Interface\\AddOns\\LeeroyHillCatsPower\\illuminati.mp3","illuminati","normal","tv",15})
+	table.insert(LHCFMaster, {"Just do it!\n".."|cff007a00Shia LaBeouf effekt","doit","",{"puts on a pair of Nike shoes."},"Interface\\AddOns\\LeeroyHillCatsPower\\doit.mp3","doit","normal","misc",16})
+	table.insert(LHCFMaster, {"Kids cheering sound effect","cheering","",{"hears some cheering in the background."},"Interface\\AddOns\\LeeroyHillCatsPower\\cheering.mp3","cheering","normal","misc",5})
+	table.insert(LHCFMaster, {"Super Mario jump sound effect","mjump","",{"jumps over an obstacle."},"Interface\\AddOns\\LeeroyHillCatsPower\\mjump.mp3","mjump","normal","games",2})
+	table.insert(LHCFMaster, {"Super Mario cart race start sound effect","race","",{"starts the race!"},"Interface\\AddOns\\LeeroyHillCatsPower\\race.mp3","race","normal","games",4})
+	table.insert(LHCFMaster, {"Mortal Kombat Raiden sound effect","raiden","",{"is a God of Thunder! Impressive!"},"Interface\\AddOns\\LeeroyHillCatsPower\\raiden.mp3","raiden","normal","games",1})
+	table.insert(LHCFMaster, {"Nope!\n".."|cff007a00Team Fortress 2 effekt","nope","",{"clearly states: Nope!"},"Interface\\AddOns\\LeeroyHillCatsPower\\nope.mp3","nope","normal","games",1})
+	table.insert(LHCFMaster, {"Oh baby, a triple! sound effect","triple","",{"performs a triple kill with one shot! Whoa!"},"Interface\\AddOns\\LeeroyHillCatsPower\\triple.mp3","triple","normal","games",4})
+	table.insert(LHCFMaster, {"Kérek egy kiló mogyorót effekt","nuts","",{"wants to buy lots of nuts."},"Interface\\AddOns\\LeeroyHillCatsPower\\nuts.mp3","nuts","normal","misc",12})
+	table.insert(LHCFMaster, {"Sad Trombone sound effect","stromb","",{"feels a little bit sad."},"Interface\\AddOns\\LeeroyHillCatsPower\\stromb.mp3","stromb","normal","misc",5})
+	table.insert(LHCFMaster, {"Sad Violin sound effect","sviolin","",{"feels really sad."},"Interface\\AddOns\\LeeroyHillCatsPower\\sviolin.mp3","sviolin","normal","misc",22})
+	table.insert(LHCFMaster, {"Sike, that's the wrong number sound effect","wrongnum","",{"gives out a wrong phone number."},"Interface\\AddOns\\LeeroyHillCatsPower\\wrongnum.mp3","wrongnum","normal","misc",7})
+	table.insert(LHCFMaster, {"Smoke weed every day sound effect","weed","",{"thinks everyone should smoke weed every day."},"Interface\\AddOns\\LeeroyHillCatsPower\\weed.mp3","weed","normal","music",3})
+	table.insert(LHCFMaster, {"A few moments later\n".."|cff007a00Spongebob effekt","later","",{"announces the passing of time."},"Interface\\AddOns\\LeeroyHillCatsPower\\later.mp3","later","normal","tv",2})
+	table.insert(LHCFMaster, {"Losing horn\n".."|cff007a00The Price is Right effekt","lhorn","",{"thinks something unfortunate has just happened."},"Interface\\AddOns\\LeeroyHillCatsPower\\lhorn.mp3","lhorn","normal","games",6})
+	table.insert(LHCFMaster, {"They are coming for you!\n".."|cff007a00WOW KurTalos Ravencrest effekt","incoming","",{"thinks the enemy is approaching."},"Interface\\AddOns\\LeeroyHillCatsPower\\incoming.mp3","incoming","normal","wow",12})
+	table.insert(LHCFMaster, {"Wombo Combo happy feet sound effect","happyfeet","",{"performs an impressive combo move!"},"Interface\\AddOns\\LeeroyHillCatsPower\\happyfeet.mp3","happyfeet","normal","misc",2})
+	table.insert(LHCFMaster, {"WOW sound effect","wow","",{"can't say anything else, but WOW!"},"Interface\\AddOns\\LeeroyHillCatsPower\\wow.mp3","wow","normal","misc",2})
 	
 	for i,v in ipairs(LHCFMaster) do
 		LHCFDefaultSettings.utaljuk[v[2]] = false
