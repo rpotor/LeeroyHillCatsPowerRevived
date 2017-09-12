@@ -322,7 +322,7 @@
 			self.isMoving = false
 		</OnDragStop>
 		<OnHide>
-			PlaySound("UChatScrollButton");
+			PlaySound(1115);
 			if ( self.isMoving ) then
 			self:StopMovingOrSizing();
 			self.isMoving = false;
@@ -336,7 +336,7 @@
 			BH_OnLoad(self);
 		</OnLoad>
 		<OnShow>
-			PlaySound("UChatScrollButton");
+			PlaySound(1115);
 			if LHCF_VanFav() == false then PanelTemplates_DisableTab(BH_Core, 1) end
 			if BH_CoreTab1.isDisabled then LHCFTabButtonHandler(2) else LHCFTabButtonHandler(1) end
 		</OnShow>
