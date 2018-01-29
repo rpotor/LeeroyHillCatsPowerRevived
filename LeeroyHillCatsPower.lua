@@ -160,6 +160,7 @@ function LHCF_SetDefaults()
 	table.insert(LHCFMaster, {"They are coming for you!\n".."|cff007a00WOW KurTalos Ravencrest effekt","incoming","",{"thinks the enemy is approaching."},"Interface\\AddOns\\LeeroyHillCatsPower\\incoming.mp3","incoming","normal","wow",12})
 	table.insert(LHCFMaster, {"Wombo Combo happy feet sound effect","happyfeet","",{"performs an impressive combo move!"},"Interface\\AddOns\\LeeroyHillCatsPower\\happyfeet.mp3","happyfeet","normal","misc",2})
 	table.insert(LHCFMaster, {"WOW sound effect","wow","",{"can't say anything else, but WOW!"},"Interface\\AddOns\\LeeroyHillCatsPower\\wow.mp3","wow","normal","misc",2})
+	table.insert(LHCFMaster, {"Kérd el a jegyzetet a Tóth Lacitól\n".."|cff007a00Schimán effekt","tlaci","",{"wants to read the chemistry notes of Laci Toth."},"Interface\\AddOns\\LeeroyHillCatsPower\\tothlaci.mp3","tlaci","normal","music",10})
 	
 	for i,v in ipairs(LHCFMaster) do
 		LHCFDefaultSettings.utaljuk[v[2]] = false
@@ -250,9 +251,8 @@ self:RegisterEvent("ADDON_LOADED");
 self:RegisterEvent("CHAT_MSG_EMOTE");
 self:RegisterEvent("MERCHANT_SHOW");
 self:RegisterEvent("PLAYER_DEAD");
-self:RegisterEvent("RESURRECT_REQUEST");
-self:RegisterEvent("UNIT_SPELLCAST_START");
 self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START");
+self:RegisterEvent("INCOMING_RESURRECT_CHANGED");
 tinsert(UISpecialFrames,"BH_Core");
 
 items = {}
@@ -642,12 +642,16 @@ function BH_OnEvent(self, event, ...)
 		end
 	end
 
-	if (event == "RESURRECT_REQUEST") then
---		doheroesdie = random(1, 100);
---		if (doheroesdie <= 50) then
-			SendChatMessage("never dies!", "EMOTE");
---		end
+	if (event == "INCOMING_RESURRECT_CHANGED") then
+		if select(1, ...) == "player" then
+--			doheroesdie = random(1, 100);
+--			if (doheroesdie <= 50) then
+				SendChatMessage("never dies!", "EMOTE");
+	--		end
+		end
 	end
+	
+	
 	
 	if (event == "CHAT_MSG_EMOTE") then
 	uzenet, kimondta = ...
