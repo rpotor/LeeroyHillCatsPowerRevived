@@ -104,7 +104,7 @@ function LHCF_SetDefaults()
 	table.insert(LHCFMaster, {"Run to the center!\n".."|cff007a00Dives effekt","runto","",{"orders the raid to run to the center!","orders | to run to the center!"},"Interface\\AddOns\\LeeroyHillCatsPower\\runto.mp3","runto","targeted","wow",1})
 	table.insert(LHCFMaster, {"Most megvagy, a kurva anyád!\n".."|cff007a00South Park Al Gore effekt","megvagy","",{"has spotted the ManBearPig!"},"Interface\\AddOns\\LeeroyHillCatsPower\\megvagy.mp3","megvagy","normal","tv",3})
 	table.insert(LHCFMaster, {"Indítjuk az órát, emeljük a búrát... MOST!\n".."|cff007a00Telemázli effekt","inditjuk","",{"starts the clock."},"Interface\\AddOns\\LeeroyHillCatsPower\\inditjuk.mp3","inditjuk","normal","tv",2})
-	table.insert(LHCFMaster, {"","neverdie","",{"never dies!"},"Interface\\AddOns\\LeeroyHillCatsPower\\neverdie.mp3","","normal","hidden",2})
+	table.insert(LHCFMaster, {"","neverdie","",{"never dies!"},"Interface\\AddOns\\LeeroyHillCatsPower\\neverdie.mp3","","normal","hidden",6})
 	table.insert(LHCFMaster, {"Batman theme","batman","",{"is happy to see Batman."},"Interface\\AddOns\\LeeroyHillCatsPower\\batman.mp3","batman","normal","music",11})
 	table.insert(LHCFMaster, {"Ben Brode laugh\n".."|cff007a00Ben Brode effekt","brodelol","",{"thinks Ben Brode is somewhere around here."},"Interface\\AddOns\\LeeroyHillCatsPower\\brodelol.mp3","brodelol","normal","misc",3})
 	table.insert(LHCFMaster, {"Get to the chopper!\n".."|cff007a00Predator effekt","chopper","",{"gives the order to evacuate on the chopper."},"Interface\\AddOns\\LeeroyHillCatsPower\\chopper.mp3","chopper","normal","tv",5})
@@ -252,7 +252,8 @@ self:RegisterEvent("CHAT_MSG_EMOTE");
 self:RegisterEvent("MERCHANT_SHOW");
 self:RegisterEvent("PLAYER_DEAD");
 self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START");
-self:RegisterEvent("INCOMING_RESURRECT_CHANGED");
+self:RegisterEvent("PLAYER_ALIVE");
+self:RegisterEvent("PLAYER_ENTERING_WORLD");
 tinsert(UISpecialFrames,"BH_Core");
 
 items = {}
@@ -615,12 +616,20 @@ function BH_OnEvent(self, event, ...)
 			UIDropDownMenu_Initialize(LHCF_DropDown1, LHCF_InitializeDropDown)
 			LHCF_CreateButtons()
 		end
+		LHCF_McCree = CreateFrame("frame")
+		LHCF_McCree:SetScript("OnUpdate", HighNoon)
+		HNtotal = 0
+		isHighNoon = false
 	end
 
 	if event == "UNIT_SPELLCAST_CHANNEL_START" then
 		if select(5, ...) == 740 then
 			if LHCFSettingsDB.LHCFSpecialEffects.tranq[2] then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\tranq.mp3", "master"); end
 		end
+	end
+	
+	if event == "PLAYER_ENTERING_WORLD" then
+		LHCFNoMercy = time() + 60;
 	end
 
 	if (event == "MERCHANT_SHOW") then
@@ -642,16 +651,14 @@ function BH_OnEvent(self, event, ...)
 		end
 	end
 
-	if (event == "INCOMING_RESURRECT_CHANGED") then
-		if select(1, ...) == "player" then
+	if (event == "PLAYER_ALIVE") then
+		if (time() >= LHCFNoMercy) then
 --			doheroesdie = random(1, 100);
 --			if (doheroesdie <= 50) then
 				SendChatMessage("never dies!", "EMOTE");
-	--		end
+--			end
 		end
 	end
-	
-	
 	
 	if (event == "CHAT_MSG_EMOTE") then
 	uzenet, kimondta = ...
@@ -687,6 +694,33 @@ function BH_OnEvent(self, event, ...)
 	end
 end
 
+function HighNoon(self,elapsed)
+	HNtotal = HNtotal + elapsed
+	if HNtotal >= 2 then
+	local minutes = tonumber(date("%M"))
+	local hours = tonumber(date("%H"))
+		if minutes == 00 then
+			if not isHighNoon then
+				-- we didn't play it during this minute #0 yet, so do it now
+				if hours == 12 then
+					PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\highnoon.mp3", "master")
+				else
+					isHighNoonSW = random(1, 100)
+					if (isHighNoonSW <= 50) then
+						PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\highnoonsw.mp3", "master")
+					end
+				end
+				-- make sure it doesn't play until after minute has been ~= 0
+				isHighNoon = true
+			end
+		else
+			-- reset the var so that the sound will be played again the next time minute == 0
+			isHighNoon = false
+		end
+		-- reset the internal time counter to zero so it starts counting the 2 second throttle again
+		HNtotal = 0
+	end
+end
 ------- Slash command handling
 
 function lhhelp_command()
