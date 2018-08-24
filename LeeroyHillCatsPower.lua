@@ -1,4 +1,4 @@
-﻿-- The Amazing Sound Effect Addon
+-- The Amazing Sound Effect Addon
 -- Inspired by the LeeroyHillCatsPower addon originally written by Barogio <Victory or Valhalla> of Thunderhorn with help from Moomin!
 -- Benny sample from Benny Hill mod by Catalyst + Springbeard of Thunderhorn
 -- Addon updated and expanded by Larenon <Order of Watchers> of Ragnaros-EU
@@ -623,7 +623,7 @@ function BH_OnEvent(self, event, ...)
 	end
 
 	if event == "UNIT_SPELLCAST_CHANNEL_START" then
-		if select(5, ...) == 740 then
+		if select(3, ...) == 740 then
 			if LHCFSettingsDB.LHCFSpecialEffects.tranq[2] then PlaySoundFile("Interface\\AddOns\\LeeroyHillCatsPower\\tranq.mp3", "master"); end
 		end
 	end
@@ -653,10 +653,10 @@ function BH_OnEvent(self, event, ...)
 
 	if (event == "PLAYER_ALIVE") then
 		if (time() >= LHCFNoMercy) then
---			doheroesdie = random(1, 100);
---			if (doheroesdie <= 50) then
+			doheroesdie = random(1, 100);
+			if (doheroesdie <= 50) then
 				SendChatMessage("never dies!", "EMOTE");
---			end
+			end
 		end
 	end
 	
