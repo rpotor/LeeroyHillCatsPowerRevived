@@ -43,6 +43,20 @@ function LHCF_SetDefaults()
 		["imadjuk"] = {}
 	}
 
+--Feast and Cauldron table for the comittee meeting
+
+	feasttable={
+	
+		--BFA Feasts and Cauldrons
+		259409, --Galley Banquet
+		259410, --Bountiful Captain's Feast
+		286050, --Sanguinated Feast
+		297048, --Famine Evaluator And Snack Table
+		276972, --Mystical Cauldron
+		298861, --Greater Mystical Cauldron
+	
+	}
+
 	-- 1: button tooltip, 2: button text, 3: additional emote, 4: emote messages, 5: sound file, 6: command, 7: type (normal / targeted), 8: category (oow, wow, games, tv, music, misc), 9: length in seconds
 
 	LHCFMaster = {}
@@ -161,6 +175,7 @@ function LHCF_SetDefaults()
 	table.insert(LHCFMaster, {"Wombo Combo happy feet sound effect","happyfeet","",{"performs an impressive combo move!"},"Interface\\AddOns\\LeeroyHillCatsPower\\happyfeet.mp3","happyfeet","normal","misc",2})
 	table.insert(LHCFMaster, {"WOW sound effect","wow","",{"can't say anything else, but WOW!"},"Interface\\AddOns\\LeeroyHillCatsPower\\wow.mp3","wow","normal","misc",2})
 	table.insert(LHCFMaster, {"Kérd el a jegyzetet a Tóth Lacitól\n".."|cff007a00Schimán effekt","tlaci","",{"wants to read the chemistry notes of Laci Toth."},"Interface\\AddOns\\LeeroyHillCatsPower\\tothlaci.mp3","tlaci","normal","music",10})
+	table.insert(LHCFMaster, {"Bizottsági ülés\n".."|cff007a00OOW klán - Bizottsági ülés effekt","bizottsagi","",{"calls for a committee meeting."},"Interface\\AddOns\\LeeroyHillCatsPower\\bizottsagi.mp3","bizottsagi","normal","oow",60})
 	
 	for i,v in ipairs(LHCFMaster) do
 		LHCFDefaultSettings.utaljuk[v[2]] = false
@@ -254,6 +269,7 @@ self:RegisterEvent("PLAYER_DEAD");
 self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START");
 self:RegisterEvent("PLAYER_ALIVE");
 self:RegisterEvent("PLAYER_ENTERING_WORLD");
+self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED");
 tinsert(UISpecialFrames,"BH_Core");
 
 items = {}
@@ -656,6 +672,17 @@ function BH_OnEvent(self, event, ...)
 			doheroesdie = random(1, 100);
 			if (doheroesdie <= 50) then
 				SendChatMessage("never dies!", "EMOTE");
+			end
+		end
+	end
+
+	if GetNumGroupMembers() > 0 and event == "COMBAT_LOG_EVENT_UNFILTERED" then
+		local arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17 = CombatLogGetCurrentEventInfo()
+		if arg2=="SPELL_CREATE" and arg5 and UnitInRaid(arg5) then
+			for i=1,#feasttable do
+				if feasttable[i]==arg12 and UnitName("player")==arg5 then
+					SendChatMessage("calls for a committee meeting.", "EMOTE");
+				end
 			end
 		end
 	end

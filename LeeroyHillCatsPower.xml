@@ -129,7 +129,7 @@
 	</Scripts>
 </Frame>
 
-<Frame name="BH_Core" toplevel="true" frameStrata="DIALOG" movable="true" enableMouse="true" hidden="true" parent="UIParent">
+<Frame name="BH_Core" toplevel="true" frameStrata="DIALOG" movable="true" enableMouse="true" hidden="true" parent="UIParent" inherits="BackdropTemplate">
 	<Size>
 		<AbsDimension x="450" y="375" />
 	</Size>

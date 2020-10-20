@@ -1,8 +1,8 @@
-## Interface: 80000
+## Interface: 90001
 ## Title: LeeroyHillCatsPower!
 ## Notes: /benny /leeroy /power /thundercats
 ## OptionalDeps:
 ## Dependencies:
-## Version: v5.53
+## Version: v6.0
 ## SavedVariables: LHCFSettingsDB
 LeeroyHillCatsPower.xml

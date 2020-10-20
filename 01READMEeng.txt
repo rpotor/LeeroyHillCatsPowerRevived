@@ -91,6 +91,10 @@ Zenyatta ultimate - https://www.youtube.com/watch?v=q_WYOaAKbOg
 
 VERSION HISTORY
 
+v6.0 - 20 October 2020
+- The addon is hopefully ready for Shadowlands pre-patch. Fingers crossed that everything still works.
+- The addon now includes the committee meeting effect (bizottsagi) in memory of the guild garden party of 2019.
+
 v5.4 - 24 February 2017
 - The addon now includes the batman, chopper, cookie, dontetlen, illusion, leviosa, niceday, notright, nyugodjanak and rightround sound effects
 - The addon now includes the squish sound effect (feature requested by Attreus)

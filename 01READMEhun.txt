@@ -89,6 +89,10 @@ Zenyatta ultimate - https://www.youtube.com/watch?v=q_WYOaAKbOg
 
 VERSION HISTORY
 
+v6.0 - 2020. 10. 20.
+- Az addon elvileg felkészítve Shadowlands pre-patchre. Reméljük minden működik :-)
+- Bekerült az addonba a bizottsági ülés hangeffekt a 2019-es klántali emlékére.
+
 v5.4 - 2017. 02. 24.
 - Bekerültek az addonba a batman, chopper, cookie, dontetlen, illusion, leviosa, niceday, notright, nyugodjanak és rightround hangeffektek
 - Bekerült az addonba a squish hangeffekt (feature requested by Attreus)
