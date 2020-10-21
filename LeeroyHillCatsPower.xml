@@ -65,24 +65,18 @@
 	</Anchors>
 </Frame>
 
-<Frame name="LHCF_SettingsFrameTemplate" parent="UIParent" frameStrata="DIALOG" hidden="true" movable="true" enableMouse="true" clampedToScreen="true" toplevel="true" virtual="true">
+<Frame name="LHCF_SettingsFrameTemplate" parent="UIParent" frameStrata="DIALOG" hidden="true" movable="true" enableMouse="true" clampedToScreen="true" toplevel="true" virtual="true" inherits="BackdropTemplate">
 	<Size>
 		<AbsDimension x="450" y="375" />
 	</Size>
 	<Anchors>
 		<Anchor point="CENTER" />
 	</Anchors>
-	<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
-		<BackgroundInsets>
-			<AbsInset left="11" right="12" top="12" bottom="11"/>
-		</BackgroundInsets>
-		<TileSize>
-			<AbsValue val="32"/>
-		</TileSize>
-		<EdgeSize>
-			<AbsValue val="32"/>
-		</EdgeSize>
-	</Backdrop>
+	<!--the below tag is the new backdrop definiton method in 9.0.1, see below-->
+	<!--https://github.com/Stanzilla/WoWUIBugs/wiki/9.0.1-Consolidated-UI-Changes#backdrop-system-changes-->
+	<KeyValues>
+        <KeyValue key="backdropInfo" value="BACKDROP_DIALOG_32_32" type="global"/>
+    </KeyValues>
 	<Layers> 
 		<Layer level="ARTWORK">
 			<Texture name="$parentTitle" file="Interface\DialogFrame\UI-DialogBox-Header">
@@ -116,7 +110,7 @@
 		</Layer>
 	</Layers>
 	<Scripts>
-		<OnLoad>
+		<OnLoad inherit="prepend"> <!--inherit attribute needed so that the backdrop definition works-->
 			self:RegisterForDrag("LeftButton")
 			self:SetUserPlaced(1)
 		</OnLoad>
