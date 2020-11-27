@@ -175,7 +175,7 @@ function LHCF_SetDefaults()
 	table.insert(LHCFMaster, {"Wombo Combo happy feet sound effect","happyfeet","",{"performs an impressive combo move!"},"Interface\\AddOns\\LeeroyHillCatsPower\\happyfeet.mp3","happyfeet","normal","misc",2})
 	table.insert(LHCFMaster, {"WOW sound effect","wow","",{"can't say anything else, but WOW!"},"Interface\\AddOns\\LeeroyHillCatsPower\\wow.mp3","wow","normal","misc",2})
 	table.insert(LHCFMaster, {"Kérd el a jegyzetet a Tóth Lacitól\n".."|cff007a00Schimán effekt","tlaci","",{"wants to read the chemistry notes of Laci Toth."},"Interface\\AddOns\\LeeroyHillCatsPower\\tothlaci.mp3","tlaci","normal","music",10})
-	table.insert(LHCFMaster, {"Bizottsági ülés\n".."|cff007a00OOW klán - Bizottsági ülés effekt","bizottsagi","",{"calls for a committee meeting."},"Interface\\AddOns\\LeeroyHillCatsPower\\bizottsagi.mp3","bizottsagi","normal","oow",60})
+	table.insert(LHCFMaster, {"Bizottsági ülés\n".."|cff007a00OOW klán - Bizottsági ülés effekt","bizottsagi","",{"calls for a committee meeting."},"Interface\\AddOns\\LeeroyHillCatsPower\\bizottsagi.mp3","bizottsagi","normal","oow",6})
 	
 	for i,v in ipairs(LHCFMaster) do
 		LHCFDefaultSettings.utaljuk[v[2]] = false
