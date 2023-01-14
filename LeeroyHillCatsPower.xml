@@ -50,7 +50,7 @@
 	</Scripts>
 </Button>
 
-<Button name="LHCFTabButtonTemplate" inherits="CharacterFrameTabButtonTemplate" virtual="true">
+<Button name="LHCFTabButtonTemplate" inherits="PanelTabButtonTemplate" virtual="true">
 	<Scripts>
 		<OnClick>
 			LHCFTabButtonHandler(self:GetID());

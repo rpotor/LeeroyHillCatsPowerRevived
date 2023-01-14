@@ -91,6 +91,9 @@ Zenyatta ultimate - https://www.youtube.com/watch?v=q_WYOaAKbOg
 
 VERSION HISTORY
 
+v7.0 - 14 January 2023
+- Fixed TabButtonTemplate problem introduced with Dragonflight release. Yeah, it looks a bit ugly, but it works. :-)
+
 v6.0 - 20 October 2020
 - The addon is hopefully ready for Shadowlands pre-patch. Fingers crossed that everything still works.
 - The addon now includes the committee meeting effect (bizottsagi) in memory of the guild garden party of 2019.

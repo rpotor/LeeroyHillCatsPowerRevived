@@ -89,6 +89,9 @@ Zenyatta ultimate - https://www.youtube.com/watch?v=q_WYOaAKbOg
 
 VERSION HISTORY
 
+v7.0 - 2023. 01. 14.
+- Javítva a Dragonflight megjelenésével felbukkant TabButtonTemplate hiba. Most már műxik, bár egy kicsit csúnya... :-)
+
 v6.0 - 2020. 10. 20.
 - Az addon elvileg felkészítve Shadowlands pre-patchre. Reméljük minden működik :-)
 - Bekerült az addonba a bizottsági ülés hangeffekt a 2019-es klántali emlékére.
